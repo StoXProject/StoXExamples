@@ -1,0 +1,50 @@
+Survey	Stratum	PSU	Layer	Beam	AcousticCategory	Frequency	NASC	MinLayerDepth	MaxLayerDepth	MeanNASCWeight	ChannelReferenceType	ChannelReferenceDepth	ChannelReferenceTilt
+Survey	Engelsk_Klondyke_2020	T1	WaterColumn	38000/2		38000	0	0	Inf	5.3			
+Survey	Engelsk_Klondyke_2020	T101								0			
+Survey	Engelsk_Klondyke_2020	T102								0			
+Survey	Engelsk_Klondyke_2020	T103								0			
+Survey	Engelsk_Klondyke_2020	T104								0			
+Survey	Engelsk_Klondyke_2020	T105								0			
+Survey	Engelsk_Klondyke_2020	T106								0			
+Survey	Engelsk_Klondyke_2020	T107								0			
+Survey	Engelsk_Klondyke_2020	T2	WaterColumn	38000/2	27	38000	9.837169122535	0	Inf	7.1	P	0	180
+Survey	Engelsk_Klondyke_2020	T2	WaterColumn	38000/2		38000	0	0	Inf	7.1			
+Survey	Engelsk_Klondyke_2020	T3	WaterColumn	38000/2	27	38000	34.923484988222	0	Inf	13.5	P	0	180
+Survey	Engelsk_Klondyke_2020	T3	WaterColumn	38000/2		38000	0	0	Inf	13.5			
+Survey	Engelsk_Klondyke_2020	T4	WaterColumn	38000/2	27	38000	174.253586910072	0	Inf	13.8	P	0	180
+Survey	Engelsk_Klondyke_2020	T4	WaterColumn	38000/2		38000	0	0	Inf	13.8			
+Survey	Engelsk_Klondyke_2020	T5	WaterColumn	38000/2	27	38000	105.037361003976	0	Inf	13.2	P	0	180
+Survey	Engelsk_Klondyke_2020	T5	WaterColumn	38000/2		38000	0	0	Inf	13.2			
+Survey	Engelsk_Klondyke_2020	T6	WaterColumn	38000/2	27	38000	20.054233579673	0	Inf	12.3	P	0	180
+Survey	Engelsk_Klondyke_2020	T6	WaterColumn	38000/2		38000	0	0	Inf	12.3			
+Survey	Engelsk_Klondyke_2020	T7	WaterColumn	38000/2	27	38000	17.219650411634	0	Inf	11.2	P	0	180
+Survey	Engelsk_Klondyke_2020	T7	WaterColumn	38000/2		38000	0	0	Inf	11.2			
+Survey	Engelsk_Klondyke_2020	T8	WaterColumn	38000/2	27	38000	50.080426142997	0	Inf	12.1	P	0	180
+Survey	Engelsk_Klondyke_2020	T8	WaterColumn	38000/2		38000	0	0	Inf	12.1			
+Survey	Engelsk_Klondyke_2020	T9	WaterColumn	38000/2	27	38000	15.823704452255	0	Inf	10.6	P	0	180
+Survey	Engelsk_Klondyke_2020	T9	WaterColumn	38000/2		38000	0	0	Inf	10.6			
+Survey	Outer_Shoal_2020_1	T10	WaterColumn	38000/2		38000	0	0	Inf	10.2			
+Survey	Outer_Shoal_2020_1	T100								0			
+Survey	Outer_Shoal_2020_1	T11	WaterColumn	38000/2	27	38000	19.75765111652	0	Inf	12.7	P	0	180
+Survey	Outer_Shoal_2020_1	T11	WaterColumn	38000/2		38000	0	0	Inf	12.7			
+Survey	Outer_Shoal_2020_1	T12	WaterColumn	38000/2	27	38000	102.24808695948	0	Inf	17.1	P	0	180
+Survey	Outer_Shoal_2020_1	T12	WaterColumn	38000/2		38000	0	0	Inf	17.1			
+Survey	Outer_Shoal_2020_1	T13	WaterColumn	38000/2	27	38000	0.586169476923	0	Inf	13	P	0	180
+Survey	Outer_Shoal_2020_1	T13	WaterColumn	38000/2		38000	0	0	Inf	13			
+Survey	Outer_Shoal_2020_1	T14	WaterColumn	38000/2	27	38000	20.11792163277	0	Inf	16.1	P	0	180
+Survey	Outer_Shoal_2020_1	T14	WaterColumn	38000/2		38000	0	0	Inf	16.1			
+Survey	Outer_Shoal_2020_1	T15	WaterColumn	38000/2	27	38000	40.56754469027	0	Inf	18.5	P	0	180
+Survey	Outer_Shoal_2020_1	T15	WaterColumn	38000/2		38000	0	0	Inf	18.5			
+Survey	Outer_Shoal_2020_1	T16	WaterColumn	38000/2	27	38000	27.3796132575	0	Inf	17.2	P	0	180
+Survey	Outer_Shoal_2020_1	T16	WaterColumn	38000/2		38000	0	0	Inf	17.2			
+Survey	Outer_Shoal_2020_1	T17	WaterColumn	38000/2	27	38000	31.08013925588	0	Inf	23.4	P	0	180
+Survey	Outer_Shoal_2020_1	T17	WaterColumn	38000/2		38000	0	0	Inf	23.4			
+Survey	Outer_Shoal_2020_1	T93								0			
+Survey	Outer_Shoal_2020_1	T94								0			
+Survey	Outer_Shoal_2020_1	T95								0			
+Survey	Outer_Shoal_2020_1	T96								0			
+Survey	Outer_Shoal_2020_1	T97								0			
+Survey	Outer_Shoal_2020_1	T98								0			
+Survey	Outer_Shoal_2020_1	T99								0			
+			WaterColumn	38000/2	27	38000	168.456843962472	0	Inf	48.2	P	0	180
+			WaterColumn	38000/2		38000	0	0	Inf	48.2			

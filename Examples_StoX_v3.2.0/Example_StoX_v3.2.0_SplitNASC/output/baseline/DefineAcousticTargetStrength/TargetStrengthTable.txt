@@ -1,0 +1,4 @@
+"AcousticCategory"	"Frequency"	"TargetStrength0"	"LengthExponent"
+"HER"	38000	-71.2	20
+"SPR"	38000	-71.2	20
+"UNK"	38000	-71.2	20

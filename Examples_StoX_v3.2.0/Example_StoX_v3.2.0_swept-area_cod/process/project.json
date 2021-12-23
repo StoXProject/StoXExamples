@@ -1,0 +1,1732 @@
+{
+    "project": {
+        "TimeSaved": "2021-12-23T01:28:06.576Z",
+        "RVersion": "R version 4.1.2 (2021-11-01)",
+        "RstoxPackageVersion": [
+            "RstoxFramework_3.2.0",
+            "RstoxBase_1.5.0",
+            "RstoxData_1.3.0"
+        ],
+        "CertifiedRstoxPackageVersion": [
+            "RstoxFramework_3.2.0",
+            "RstoxBase_1.5.0",
+            "RstoxData_1.3.0"
+        ],
+        "AllCertifiedRstoxPackageVersion": true,
+        "OfficialRstoxFrameworkVersion": true,
+        "DependentPackageVersion": [
+            "geojsonsf_2.0.1",
+            "data.table_1.14.2",
+            "jsonlite_1.7.2",
+            "jsonvalidate_1.3.2",
+            "rgdal_1.5-28",
+            "sp_1.4-6",
+            "sf_1.0-5",
+            "xml2_1.3.3",
+            "stringr_1.4.0",
+            "stringi_1.7.6",
+            "rgeos_0.5-9",
+            "lwgeom_0.2-8",
+            "ggplot2_3.3.5",
+            "units_0.7-2",
+            "Rcpp_1.0.7",
+            "xslt_1.4.3",
+            "geometries_0.2.0",
+            "jsonify_1.2.1",
+            "rapidjsonr_1.2.0",
+            "sfheaders_0.4.0",
+            "digest_0.6.29",
+            "glue_1.6.0",
+            "gtable_0.3.0",
+            "isoband_0.2.5",
+            "MASS_7.3-53.1",
+            "mgcv_1.8-34",
+            "rlang_0.4.12",
+            "scales_1.1.1",
+            "tibble_3.1.6",
+            "withr_2.4.3",
+            "V8_3.6.0",
+            "classInt_0.4-3",
+            "DBI_1.1.2",
+            "magrittr_2.0.1",
+            "s2_1.0.7",
+            "lattice_0.20-41",
+            "nlme_3.1-152",
+            "Matrix_1.2-18",
+            "farver_2.1.0",
+            "labeling_0.4.2",
+            "lifecycle_1.0.1",
+            "munsell_0.5.0",
+            "R6_2.5.1",
+            "RColorBrewer_1.1-2",
+            "viridisLite_0.4.0",
+            "colorspace_2.0-2",
+            "ellipsis_0.3.2",
+            "fansi_0.5.0",
+            "pillar_1.6.4",
+            "pkgconfig_2.0.3",
+            "vctrs_0.3.8",
+            "cli_3.1.0",
+            "crayon_1.4.2",
+            "utf8_1.2.2",
+            "curl_4.3.2",
+            "e1071_1.7-9",
+            "class_7.3-18",
+            "KernSmooth_2.23-18",
+            "proxy_0.4-26",
+            "wk_0.5.0",
+            "cpp11_0.4.2"
+        ],
+        "Application": "StoX 3.2.0",
+        "models": {
+            "baseline": [
+                {
+                    "processName": "ReadBiotic",
+                    "functionName": "RstoxData::ReadBiotic",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "FileNames": "input/biotic/biotic_cruiseNumber_1999002_G+O+Sars_2021-01-21T08.52.06.564Z.xml"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "StoXBiotic",
+                    "functionName": "RstoxData::StoxBiotic",
+                    "functionInputs": {
+                        "BioticData": "ReadBiotic"
+                    },
+                    "functionParameters": {
+
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "AddToStoxBiotic",
+                    "functionName": "RstoxData::AddToStoxBiotic",
+                    "functionInputs": {
+                        "StoxBioticData": "StoXBiotic",
+                        "BioticData": "ReadBiotic"
+                    },
+                    "functionParameters": {
+                        "VariableNames": [
+                            "gearcondition",
+                            "samplequality",
+                            "stationtype"
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": true,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "FilterStoxBiotic",
+                    "functionName": "RstoxData::FilterStoxBiotic",
+                    "functionInputs": {
+                        "StoxBioticData": "AddToStoxBiotic"
+                    },
+                    "functionParameters": {
+                        "FilterExpression": {
+                            "Haul": "Gear %in% c(\"3270\", \"3271\") & gearcondition %in% c(\"1\", \"2\") & samplequality %in% c(\"1\", \"3\")"
+                        },
+                        "FilterUpwards": true
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": true,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "FilterStoXBiotic2",
+                    "functionName": "RstoxData::FilterStoxBiotic",
+                    "functionInputs": {
+                        "StoxBioticData": "FilterStoxBiotic"
+                    },
+                    "functionParameters": {
+                        "FilterExpression": {
+                            "SpeciesCategory": "SpeciesCategory %in% \"torsk/164712/126436/NA\""
+                        },
+                        "FilterUpwards": false
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "FilterStoxBiotic_removeCod1",
+                    "functionName": "RstoxData::FilterStoxBiotic",
+                    "functionInputs": {
+                        "StoxBioticData": "FilterStoXBiotic2"
+                    },
+                    "functionParameters": {
+                        "FilterExpression": {
+                            "SpeciesCategory": "SpeciesCategory %in% \"torsk/164712/126436/NA\"",
+                            "Haul": "Haul %notin% \"1999002/4/1999/1024/2-25-80010\""
+                        },
+                        "FilterUpwards": false
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "DefineStratumPolygon",
+                    "functionName": "RstoxBase::DefineStratumPolygon",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "UseProcessData": true,
+                        "DefinitionMethod": "ResourceFile",
+                        "FileName": "C:/Users/atlet/workspace/stox/project/2.9.21/BS strata.txt",
+                        "StratumNameLabel": "polygonName",
+                        "SimplifyStratumPolygon": false,
+                        "SimplificationFactor": 1
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": true,
+                        "fileOutput": true
+                    },
+                    "processData": {
+                        "StratumPolygon": {
+                            "type": "FeatureCollection",
+                            "features": [
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "1"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    15.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    23.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    23.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    15.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    15.0,
+                                                    73.0
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "2"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    23.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    23.0,
+                                                    72.5
+                                                ],
+                                                [
+                                                    29.0,
+                                                    72.5
+                                                ],
+                                                [
+                                                    29.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    30.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    30.0,
+                                                    72.0
+                                                ],
+                                                [
+                                                    26.0,
+                                                    72.0
+                                                ],
+                                                [
+                                                    26.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    23.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    23.0,
+                                                    71.5
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "3"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    23.0,
+                                                    72.5
+                                                ],
+                                                [
+                                                    23.0,
+                                                    73.5
+                                                ],
+                                                [
+                                                    27.0,
+                                                    73.5
+                                                ],
+                                                [
+                                                    27.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    30.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    30.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    29.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    29.0,
+                                                    72.5
+                                                ],
+                                                [
+                                                    23.0,
+                                                    72.5
+                                                ],
+                                                [
+                                                    23.0,
+                                                    72.5
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "4"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    17.0,
+                                                    70.0
+                                                ],
+                                                [
+                                                    17.0,
+                                                    70.5
+                                                ],
+                                                [
+                                                    20.0,
+                                                    70.5
+                                                ],
+                                                [
+                                                    20.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    22.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    22.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    26.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    26.0,
+                                                    71.2
+                                                ],
+                                                [
+                                                    25.5,
+                                                    71.2
+                                                ],
+                                                [
+                                                    25.5,
+                                                    71.12
+                                                ],
+                                                [
+                                                    24.0,
+                                                    71.12
+                                                ],
+                                                [
+                                                    22.25,
+                                                    70.75
+                                                ],
+                                                [
+                                                    21.5,
+                                                    70.4
+                                                ],
+                                                [
+                                                    19.0,
+                                                    70.25
+                                                ],
+                                                [
+                                                    18.25,
+                                                    70.0
+                                                ],
+                                                [
+                                                    17.0,
+                                                    70.0
+                                                ],
+                                                [
+                                                    17.0,
+                                                    70.0
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "5"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    17.0,
+                                                    70.5
+                                                ],
+                                                [
+                                                    17.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    22.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    22.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    20.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    20.0,
+                                                    70.5
+                                                ],
+                                                [
+                                                    17.0,
+                                                    70.5
+                                                ],
+                                                [
+                                                    17.0,
+                                                    70.5
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "6"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    26.0,
+                                                    71.12
+                                                ],
+                                                [
+                                                    26.0,
+                                                    72.0
+                                                ],
+                                                [
+                                                    30.0,
+                                                    72.0
+                                                ],
+                                                [
+                                                    30.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    31.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    31.0,
+                                                    70.53
+                                                ],
+                                                [
+                                                    30.0,
+                                                    70.75
+                                                ],
+                                                [
+                                                    28.25,
+                                                    71.0
+                                                ],
+                                                [
+                                                    28.25,
+                                                    71.12
+                                                ],
+                                                [
+                                                    27.25,
+                                                    71.12
+                                                ],
+                                                [
+                                                    27.25,
+                                                    71.0
+                                                ],
+                                                [
+                                                    26.25,
+                                                    71.0
+                                                ],
+                                                [
+                                                    26.0,
+                                                    71.12
+                                                ],
+                                                [
+                                                    26.0,
+                                                    71.12
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "7"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    29.75,
+                                                    69.88
+                                                ],
+                                                [
+                                                    29.75,
+                                                    70.0
+                                                ],
+                                                [
+                                                    30.25,
+                                                    70.0
+                                                ],
+                                                [
+                                                    31.0,
+                                                    70.25
+                                                ],
+                                                [
+                                                    31.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    33.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    33.0,
+                                                    70.5
+                                                ],
+                                                [
+                                                    35.0,
+                                                    70.5
+                                                ],
+                                                [
+                                                    35.0,
+                                                    70.0
+                                                ],
+                                                [
+                                                    38.0,
+                                                    70.0
+                                                ],
+                                                [
+                                                    38.0,
+                                                    69.5
+                                                ],
+                                                [
+                                                    40.0,
+                                                    69.5
+                                                ],
+                                                [
+                                                    40.0,
+                                                    68.25
+                                                ],
+                                                [
+                                                    39.5,
+                                                    68.25
+                                                ],
+                                                [
+                                                    37.5,
+                                                    69.0
+                                                ],
+                                                [
+                                                    37.0,
+                                                    69.25
+                                                ],
+                                                [
+                                                    36.5,
+                                                    69.25
+                                                ],
+                                                [
+                                                    34.25,
+                                                    69.62
+                                                ],
+                                                [
+                                                    33.5,
+                                                    69.62
+                                                ],
+                                                [
+                                                    33.5,
+                                                    69.88
+                                                ],
+                                                [
+                                                    32.25,
+                                                    70.12
+                                                ],
+                                                [
+                                                    31.25,
+                                                    70.0
+                                                ],
+                                                [
+                                                    31.25,
+                                                    69.88
+                                                ],
+                                                [
+                                                    29.75,
+                                                    69.88
+                                                ],
+                                                [
+                                                    29.75,
+                                                    69.88
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "8"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    38.0,
+                                                    69.5
+                                                ],
+                                                [
+                                                    38.0,
+                                                    70.0
+                                                ],
+                                                [
+                                                    35.0,
+                                                    70.0
+                                                ],
+                                                [
+                                                    35.0,
+                                                    70.5
+                                                ],
+                                                [
+                                                    33.0,
+                                                    70.5
+                                                ],
+                                                [
+                                                    33.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    34.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    34.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    38.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    38.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    40.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    40.0,
+                                                    69.5
+                                                ],
+                                                [
+                                                    38.0,
+                                                    69.5
+                                                ],
+                                                [
+                                                    38.0,
+                                                    69.5
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "9"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    40.05761991,
+                                                    71.02658121
+                                                ],
+                                                [
+                                                    40.0,
+                                                    70.99999961
+                                                ],
+                                                [
+                                                    40.0,
+                                                    70.99999961
+                                                ],
+                                                [
+                                                    40.05761991,
+                                                    71.02658121
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "10"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    38.0,
+                                                    70.99999921
+                                                ],
+                                                [
+                                                    38.0,
+                                                    71.49999917
+                                                ],
+                                                [
+                                                    36.0,
+                                                    71.49999917
+                                                ],
+                                                [
+                                                    36.0,
+                                                    71.99999912
+                                                ],
+                                                [
+                                                    39.97431375,
+                                                    72.02872714
+                                                ],
+                                                [
+                                                    40.0,
+                                                    71.49999917
+                                                ],
+                                                [
+                                                    40.0,
+                                                    70.99999921
+                                                ],
+                                                [
+                                                    38.0,
+                                                    70.99999921
+                                                ],
+                                                [
+                                                    38.0,
+                                                    70.99999921
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "11"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    34.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    34.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    30.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    30.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    36.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    36.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    34.0,
+                                                    71.5
+                                                ],
+                                                [
+                                                    34.0,
+                                                    71.5
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "12"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    30.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    30.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    34.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    34.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    30.0,
+                                                    71.0
+                                                ],
+                                                [
+                                                    30.0,
+                                                    71.0
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "13"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    40.0,
+                                                    68.24999976
+                                                ],
+                                                [
+                                                    40.0,
+                                                    68.24999976
+                                                ],
+                                                [
+                                                    40.0,
+                                                    68.24999976
+                                                ],
+                                                [
+                                                    40.0,
+                                                    68.24999976
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "14"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    40.0,
+                                                    69.99999966
+                                                ],
+                                                [
+                                                    40.0,
+                                                    69.99999966
+                                                ],
+                                                [
+                                                    40.0,
+                                                    69.99999966
+                                                ],
+                                                [
+                                                    40.0,
+                                                    69.99999966
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "15"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    46.0,
+                                                    70.99999961
+                                                ],
+                                                [
+                                                    46.0,
+                                                    70.99999961
+                                                ],
+                                                [
+                                                    46.0,
+                                                    70.99999961
+                                                ],
+                                                [
+                                                    46.0,
+                                                    70.99999961
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "16"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    41.0,
+                                                    72.49999954
+                                                ],
+                                                [
+                                                    41.0,
+                                                    72.49999954
+                                                ],
+                                                [
+                                                    41.0,
+                                                    72.49999954
+                                                ],
+                                                [
+                                                    41.0,
+                                                    72.49999954
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "17"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    36.0,
+                                                    71.99999869
+                                                ],
+                                                [
+                                                    35.97202749,
+                                                    73.75427682
+                                                ],
+                                                [
+                                                    38.59576313,
+                                                    73.75774117
+                                                ],
+                                                [
+                                                    38.58977516,
+                                                    73.31692861
+                                                ],
+                                                [
+                                                    40.86809081,
+                                                    73.34171659
+                                                ],
+                                                [
+                                                    40.81184261,
+                                                    72.01938248
+                                                ],
+                                                [
+                                                    36.0,
+                                                    71.99999869
+                                                ],
+                                                [
+                                                    36.0,
+                                                    71.99999869
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "18"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    30.0,
+                                                    73.99999848
+                                                ],
+                                                [
+                                                    29.9467993,
+                                                    75.12308304
+                                                ],
+                                                [
+                                                    33.9923676,
+                                                    75.13183495
+                                                ],
+                                                [
+                                                    34.0625291,
+                                                    74.71319768
+                                                ],
+                                                [
+                                                    35.93789298,
+                                                    74.73846091
+                                                ],
+                                                [
+                                                    36.0,
+                                                    73.99999848
+                                                ],
+                                                [
+                                                    30.0,
+                                                    73.99999848
+                                                ],
+                                                [
+                                                    30.0,
+                                                    73.99999848
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "19"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    36.0,
+                                                    73.99999949
+                                                ],
+                                                [
+                                                    36.0,
+                                                    73.99999949
+                                                ],
+                                                [
+                                                    36.0,
+                                                    73.99999949
+                                                ],
+                                                [
+                                                    36.0,
+                                                    73.99999949
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "20"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    44.0,
+                                                    73.99999949
+                                                ],
+                                                [
+                                                    44.0,
+                                                    73.99999949
+                                                ],
+                                                [
+                                                    44.0,
+                                                    73.99999949
+                                                ],
+                                                [
+                                                    44.0,
+                                                    73.99999949
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "21"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    15.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    15.0,
+                                                    74.5
+                                                ],
+                                                [
+                                                    16.0,
+                                                    74.5
+                                                ],
+                                                [
+                                                    16.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    17.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    17.0,
+                                                    73.5
+                                                ],
+                                                [
+                                                    21.0,
+                                                    73.5
+                                                ],
+                                                [
+                                                    21.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    26.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    26.0,
+                                                    74.5
+                                                ],
+                                                [
+                                                    28.0,
+                                                    74.5
+                                                ],
+                                                [
+                                                    28.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    27.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    27.0,
+                                                    73.5
+                                                ],
+                                                [
+                                                    23.0,
+                                                    73.5
+                                                ],
+                                                [
+                                                    23.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    15.0,
+                                                    73.0
+                                                ],
+                                                [
+                                                    15.0,
+                                                    73.0
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "22"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    28.0,
+                                                    73.99999746
+                                                ],
+                                                [
+                                                    28.0,
+                                                    74.49999739
+                                                ],
+                                                [
+                                                    28.31731374,
+                                                    74.97872309
+                                                ],
+                                                [
+                                                    29.95502863,
+                                                    75.11937995
+                                                ],
+                                                [
+                                                    30.0,
+                                                    73.99999746
+                                                ],
+                                                [
+                                                    28.0,
+                                                    73.99999746
+                                                ],
+                                                [
+                                                    28.0,
+                                                    73.99999746
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "23"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    17.0,
+                                                    73.5
+                                                ],
+                                                [
+                                                    17.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    16.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    16.0,
+                                                    74.5
+                                                ],
+                                                [
+                                                    26.0,
+                                                    74.5
+                                                ],
+                                                [
+                                                    26.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    21.0,
+                                                    74.0
+                                                ],
+                                                [
+                                                    21.0,
+                                                    73.5
+                                                ],
+                                                [
+                                                    17.0,
+                                                    73.5
+                                                ],
+                                                [
+                                                    17.0,
+                                                    73.5
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "processName": "StratumArea",
+                    "functionName": "RstoxBase::StratumArea",
+                    "functionInputs": {
+                        "StratumPolygon": "DefineStratumPolygon"
+                    },
+                    "functionParameters": {
+                        "AreaMethod": "Accurate"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "LengthDistribution",
+                    "functionName": "RstoxBase::LengthDistribution",
+                    "functionInputs": {
+                        "StoxBioticData": "FilterStoxBiotic_removeCod1"
+                    },
+                    "functionParameters": {
+                        "LengthDistributionType": "Normalized",
+                        "RaisingFactorPriority": "Weight"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "LengthDependentCatchCompensation",
+                    "functionName": "RstoxBase::LengthDependentCatchCompensation",
+                    "functionInputs": {
+                        "LengthDistributionData": "LengthDistribution"
+                    },
+                    "functionParameters": {
+                        "CompensationMethod": "LengthDependentSweepWidth",
+                        "LengthDependentSweepWidthParameters": [
+                            {
+                                "SpeciesCategory": "torsk/164712/126436/NA",
+                                "Alpha": 5.91,
+                                "Beta": 0.43,
+                                "LMin": 15,
+                                "LMax": 62
+                            }
+                        ],
+                        "LengthDependentSelectivityParameters": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "RegroupLengthDistribution5",
+                    "functionName": "RstoxBase::RegroupLengthDistribution",
+                    "functionInputs": {
+                        "LengthDistributionData": "LengthDependentCatchCompensation"
+                    },
+                    "functionParameters": {
+                        "LengthInterval": 5
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "MeanLengthDistribution",
+                    "functionName": "RstoxBase::MeanLengthDistribution",
+                    "functionInputs": {
+                        "LengthDistributionData": "RegroupLengthDistribution5",
+                        "SumLengthDistributionData": null,
+                        "BioticLayer": null,
+                        "Survey": "DefineSurvey",
+                        "StratumPolygon": "DefineStratumPolygon",
+                        "BioticPSU": "DefineBioticPSU"
+                    },
+                    "functionParameters": {
+                        "LayerDefinition": "FunctionParameter",
+                        "LayerDefinitionMethod": "WaterColumn",
+                        "Resolution": [
+
+                        ],
+                        "LayerTable": [
+
+                        ],
+                        "SurveyDefinition": "FunctionParameter",
+                        "SurveyDefinitionMethod": "AllStrata",
+                        "SurveyTable": [
+
+                        ],
+                        "PSUDefinition": "FunctionParameter",
+                        "PSUDefinitionMethod": "StationToPSU"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "SweptAreaDensity",
+                    "functionName": "RstoxBase::SweptAreaDensity",
+                    "functionInputs": {
+                        "MeanLengthDistributionData": "MeanLengthDistribution"
+                    },
+                    "functionParameters": {
+                        "SweepWidthMethod": "PreDefined",
+                        "SweepWidth": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "MeanDensity",
+                    "functionName": "RstoxBase::MeanDensity",
+                    "functionInputs": {
+                        "DensityData": "SweptAreaDensity"
+                    },
+                    "functionParameters": {
+
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "Abundance",
+                    "functionName": "RstoxBase::Abundance",
+                    "functionInputs": {
+                        "MeanDensityData": "MeanDensity",
+                        "StratumAreaData": "StratumArea"
+                    },
+                    "functionParameters": {
+
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "Individuals",
+                    "functionName": "RstoxBase::Individuals",
+                    "functionInputs": {
+                        "StoxBioticData": "FilterStoXBiotic2",
+                        "BioticAssignment": null,
+                        "MeanLengthDistributionData": "MeanLengthDistribution"
+                    },
+                    "functionParameters": {
+                        "AbundanceType": "SweptArea"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "SuperIndividuals",
+                    "functionName": "RstoxBase::SuperIndividuals",
+                    "functionInputs": {
+                        "IndividualsData": "Individuals",
+                        "AbundanceData": "Abundance",
+                        "LengthDistributionData": "RegroupLengthDistribution5"
+                    },
+                    "functionParameters": {
+                        "DistributionMethod": "HaulDensity"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "ImputeSuperIndividuals",
+                    "functionName": "RstoxBase::ImputeSuperIndividuals",
+                    "functionInputs": {
+                        "SuperIndividualsData": "SuperIndividuals"
+                    },
+                    "functionParameters": {
+                        "ImputationMethod": "RandomSampling",
+                        "ImputeAtMissing": "IndividualAge",
+                        "ImputeByEqual": [
+                            "SpeciesCategory",
+                            "IndividualTotalLength"
+                        ],
+                        "ToImpute": [
+                            "IndividualRoundWeight",
+                            "IndividualAge",
+                            "WeightMeasurement",
+                            "IndividualSex"
+                        ],
+                        "Seed": 1
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                }
+            ],
+            "analysis": [
+                {
+                    "processName": "Bootstrap",
+                    "functionName": "RstoxFramework::Bootstrap",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "BootstrapMethodTable": [
+                            {
+                                "ResampleFunction": "ResampleMeanLengthDistributionData",
+                                "ProcessName": "MeanLengthDistribution",
+                                "Seed": 1
+                            }
+                        ],
+                        "NumberOfBootstraps": 50,
+                        "OutputProcesses": "ImputeSuperIndividuals",
+                        "UseOutputData": false,
+                        "NumberOfCores": 1,
+                        "BaselineSeedTable": [
+                            {
+                                "ProcessName": "ImputeSuperIndividuals",
+                                "Seed": 1
+                            }
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                }
+            ],
+            "report": [
+                {
+                    "processName": "ReportBootstrap_All",
+                    "functionName": "RstoxFramework::ReportBootstrap",
+                    "functionInputs": {
+                        "BootstrapData": "Bootstrap"
+                    },
+                    "functionParameters": {
+                        "BaselineProcess": "ImputeSuperIndividuals",
+                        "TargetVariable": "Biomass",
+                        "AggregationFunction": "sum",
+                        "BootstrapReportFunction": "summaryStox",
+                        "GroupingVariables": [
+
+                        ],
+                        "RemoveMissingValues": true,
+                        "AggregationWeightingVariable": [
+
+                        ],
+                        "BootstrapReportWeightingVariable": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "ReportBootstrap_Abundance",
+                    "functionName": "RstoxFramework::ReportBootstrap",
+                    "functionInputs": {
+                        "BootstrapData": "Bootstrap"
+                    },
+                    "functionParameters": {
+                        "BaselineProcess": "ImputeSuperIndividuals",
+                        "TargetVariable": "Abundance",
+                        "AggregationFunction": "sum",
+                        "BootstrapReportFunction": "summaryStox",
+                        "GroupingVariables": [
+                            "Stratum",
+                            "IndividualTotalLength"
+                        ],
+                        "RemoveMissingValues": true,
+                        "AggregationWeightingVariable": [
+
+                        ],
+                        "BootstrapReportWeightingVariable": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "ReportSuperIndividuals",
+                    "functionName": "RstoxBase::ReportSuperIndividuals",
+                    "functionInputs": {
+                        "SuperIndividualsData": "ImputeSuperIndividuals"
+                    },
+                    "functionParameters": {
+                        "TargetVariable": "IndividualTotalLength",
+                        "ReportFunction": "weighted.mean",
+                        "GroupingVariables": [
+                            "Stratum",
+                            "IndividualAge"
+                        ],
+                        "RemoveMissingValues": true,
+                        "WeightingVariable": "Abundance"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                }
+            ]
+        }
+    }
+}
+

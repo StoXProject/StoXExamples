@@ -1,0 +1,789 @@
+{
+    "project": {
+        "TimeSaved": "2021-12-23T01:05:06.992Z",
+        "RVersion": "R version 4.1.2 (2021-11-01)",
+        "RstoxPackageVersion": [
+            "RstoxFramework_3.2.0",
+            "RstoxBase_1.5.0",
+            "RstoxData_1.3.0"
+        ],
+        "CertifiedRstoxPackageVersion": [
+            "RstoxFramework_3.2.0",
+            "RstoxBase_1.5.0",
+            "RstoxData_1.3.0"
+        ],
+        "AllCertifiedRstoxPackageVersion": true,
+        "OfficialRstoxFrameworkVersion": true,
+        "DependentPackageVersion": [
+            "geojsonsf_2.0.1",
+            "data.table_1.14.2",
+            "jsonlite_1.7.2",
+            "jsonvalidate_1.3.2",
+            "rgdal_1.5-28",
+            "sp_1.4-6",
+            "sf_1.0-5",
+            "xml2_1.3.3",
+            "stringr_1.4.0",
+            "stringi_1.7.6",
+            "rgeos_0.5-9",
+            "lwgeom_0.2-8",
+            "ggplot2_3.3.5",
+            "units_0.7-2",
+            "Rcpp_1.0.7",
+            "xslt_1.4.3",
+            "geometries_0.2.0",
+            "jsonify_1.2.1",
+            "rapidjsonr_1.2.0",
+            "sfheaders_0.4.0",
+            "digest_0.6.29",
+            "glue_1.6.0",
+            "gtable_0.3.0",
+            "isoband_0.2.5",
+            "MASS_7.3-53.1",
+            "mgcv_1.8-34",
+            "rlang_0.4.12",
+            "scales_1.1.1",
+            "tibble_3.1.6",
+            "withr_2.4.3",
+            "V8_3.6.0",
+            "classInt_0.4-3",
+            "DBI_1.1.2",
+            "magrittr_2.0.1",
+            "s2_1.0.7",
+            "lattice_0.20-41",
+            "nlme_3.1-152",
+            "Matrix_1.2-18",
+            "farver_2.1.0",
+            "labeling_0.4.2",
+            "lifecycle_1.0.1",
+            "munsell_0.5.0",
+            "R6_2.5.1",
+            "RColorBrewer_1.1-2",
+            "viridisLite_0.4.0",
+            "colorspace_2.0-2",
+            "ellipsis_0.3.2",
+            "fansi_0.5.0",
+            "pillar_1.6.4",
+            "pkgconfig_2.0.3",
+            "vctrs_0.3.8",
+            "cli_3.1.0",
+            "crayon_1.4.2",
+            "utf8_1.2.2",
+            "curl_4.3.2",
+            "e1071_1.7-9",
+            "class_7.3-18",
+            "KernSmooth_2.23-18",
+            "proxy_0.4-26",
+            "wk_0.5.0",
+            "cpp11_0.4.2"
+        ],
+        "Application": "StoX 3.2.0",
+        "models": {
+            "baseline": [
+                {
+                    "processName": "ReadBiotic",
+                    "functionName": "RstoxData::ReadBiotic",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "FileNames": "input/biotic/4-2021-9387-56.xml"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "ICESBiotic",
+                    "functionName": "RstoxData::ICESBiotic",
+                    "functionInputs": {
+                        "BioticData": "ReadBiotic"
+                    },
+                    "functionParameters": {
+                        "SurveyName": "IESNS",
+                        "Country": "NO",
+                        "Organisation": 612,
+                        "AllowRemoveSpecies": true
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "DefineTranslation_HaulGear",
+                    "functionName": "RstoxData::DefineTranslation",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "UseProcessData": true,
+                        "DefinitionMethod": "TranslationTable",
+                        "TranslationTable": [
+                            {
+                                "VariableName": "HaulGear",
+                                "Value": "3535",
+                                "NewValue": "PEL"
+                            },
+                            {
+                                "VariableName": "HaulGear",
+                                "Value": "3536",
+                                "NewValue": "PEL"
+                            },
+                            {
+                                "VariableName": "HaulGear",
+                                "Value": "3560",
+                                "NewValue": "CAM"
+                            }
+                        ],
+                        "VariableName": "VariableName",
+                        "ValueColumn": "Value",
+                        "NewValueColumn": "NewValue",
+                        "Conditional": false,
+                        "ConditionalVariableName": "ConditionalVariableName",
+                        "ConditionalValueColumn": "ConditionalValue",
+                        "FileName": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": {
+                        "Translation": [
+                            {
+                                "VariableName": "HaulGear",
+                                "Value": "3535",
+                                "NewValue": "PEL"
+                            },
+                            {
+                                "VariableName": "HaulGear",
+                                "Value": "3536",
+                                "NewValue": "PEL"
+                            },
+                            {
+                                "VariableName": "HaulGear",
+                                "Value": "3560",
+                                "NewValue": "CAM"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "processName": "TranslateICESBiotic_HaulGear",
+                    "functionName": "RstoxData::TranslateICESBiotic",
+                    "functionInputs": {
+                        "ICESBioticData": "ICESBiotic",
+                        "Translation": "DefineTranslation_HaulGear"
+                    },
+                    "functionParameters": {
+                        "PreserveClass": true
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "DefineTranslation_HaulValidity",
+                    "functionName": "RstoxData::DefineTranslation",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "UseProcessData": true,
+                        "DefinitionMethod": "TranslationTable",
+                        "TranslationTable": [
+                            {
+                                "VariableName": "HaulValidity",
+                                "Value": "NA",
+                                "NewValue": "V"
+                            }
+                        ],
+                        "VariableName": "VariableName",
+                        "ValueColumn": "Value",
+                        "NewValueColumn": "NewValue",
+                        "Conditional": false,
+                        "ConditionalVariableName": "ConditionalVariableName",
+                        "ConditionalValueColumn": "ConditionalValue",
+                        "FileName": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": {
+                        "Translation": [
+                            {
+                                "VariableName": "HaulValidity",
+                                "Value": "NA",
+                                "NewValue": "V"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "processName": "TranslateStoxBiotic_HaulValidity",
+                    "functionName": "RstoxData::TranslateICESBiotic",
+                    "functionInputs": {
+                        "ICESBioticData": "TranslateICESBiotic_HaulGear",
+                        "Translation": "DefineTranslation_HaulValidity"
+                    },
+                    "functionParameters": {
+                        "PreserveClass": true
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "DefineTranslation_BiologyIndividualMaturity_conditional",
+                    "functionName": "RstoxData::DefineTranslation",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "UseProcessData": true,
+                        "DefinitionMethod": "TranslationTable",
+                        "TranslationTable": [
+                            {
+                                "ConditionalVariableName": "CatchSpeciesCode",
+                                "ConditionalValue": "126439",
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "1",
+                                "NewValue": "61"
+                            },
+                            {
+                                "ConditionalVariableName": "CatchSpeciesCode",
+                                "ConditionalValue": "126439",
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "2",
+                                "NewValue": "65"
+                            },
+                            {
+                                "ConditionalVariableName": "CatchSpeciesCode",
+                                "ConditionalValue": "126439",
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "3",
+                                "NewValue": "62"
+                            },
+                            {
+                                "ConditionalVariableName": "CatchSpeciesCode",
+                                "ConditionalValue": "126439",
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "4",
+                                "NewValue": "62"
+                            }
+                        ],
+                        "VariableName": "VariableName",
+                        "ValueColumn": "Value",
+                        "NewValueColumn": "NewValue",
+                        "Conditional": true,
+                        "ConditionalVariableName": "ConditionalVariableName",
+                        "ConditionalValueColumn": "ConditionalValue",
+                        "FileName": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": {
+                        "Translation": [
+                            {
+                                "ConditionalVariableName": "CatchSpeciesCode",
+                                "ConditionalValue": "126439",
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "1",
+                                "NewValue": "61"
+                            },
+                            {
+                                "ConditionalVariableName": "CatchSpeciesCode",
+                                "ConditionalValue": "126439",
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "2",
+                                "NewValue": "65"
+                            },
+                            {
+                                "ConditionalVariableName": "CatchSpeciesCode",
+                                "ConditionalValue": "126439",
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "3",
+                                "NewValue": "62"
+                            },
+                            {
+                                "ConditionalVariableName": "CatchSpeciesCode",
+                                "ConditionalValue": "126439",
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "4",
+                                "NewValue": "62"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "processName": "TranslateICESBiotic_BiologyIndividualMaturity_conditional",
+                    "functionName": "RstoxData::TranslateICESBiotic",
+                    "functionInputs": {
+                        "ICESBioticData": "TranslateStoxBiotic_HaulValidity",
+                        "Translation": "DefineTranslation_BiologyIndividualMaturity_conditional"
+                    },
+                    "functionParameters": {
+                        "PreserveClass": true
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "DefineTranslation_BiologyIndividualMaturity",
+                    "functionName": "RstoxData::DefineTranslation",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "UseProcessData": true,
+                        "DefinitionMethod": "TranslationTable",
+                        "TranslationTable": [
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "1",
+                                "NewValue": "61"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "2",
+                                "NewValue": "62"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "3",
+                                "NewValue": "62"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "4",
+                                "NewValue": "62"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "5",
+                                "NewValue": "62"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "6",
+                                "NewValue": "63"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "7",
+                                "NewValue": "64"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "8",
+                                "NewValue": "65"
+                            }
+                        ],
+                        "VariableName": "VariableName",
+                        "ValueColumn": "Value",
+                        "NewValueColumn": "NewValue",
+                        "Conditional": false,
+                        "ConditionalVariableName": "ConditionalVariableName",
+                        "ConditionalValueColumn": "ConditionalValue",
+                        "FileName": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": {
+                        "Translation": [
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "1",
+                                "NewValue": "61"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "2",
+                                "NewValue": "62"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "3",
+                                "NewValue": "62"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "4",
+                                "NewValue": "62"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "5",
+                                "NewValue": "62"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "6",
+                                "NewValue": "63"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "7",
+                                "NewValue": "64"
+                            },
+                            {
+                                "VariableName": "BiologyIndividualMaturity",
+                                "Value": "8",
+                                "NewValue": "65"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "processName": "TranslateICESBiotic_BiologyIndividualMaturity",
+                    "functionName": "RstoxData::TranslateICESBiotic",
+                    "functionInputs": {
+                        "ICESBioticData": "TranslateICESBiotic_BiologyIndividualMaturity_conditional",
+                        "Translation": "DefineTranslation_BiologyIndividualMaturity"
+                    },
+                    "functionParameters": {
+                        "PreserveClass": true
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "DefineTranslation4",
+                    "functionName": "RstoxData::DefineTranslation",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "UseProcessData": true,
+                        "DefinitionMethod": "TranslationTable",
+                        "TranslationTable": [
+                            {
+                                "VariableName": "HaulDuration",
+                                "Value": "NA",
+                                "NewValue": "160"
+                            }
+                        ],
+                        "VariableName": "VariableName",
+                        "ValueColumn": "Value",
+                        "NewValueColumn": "NewValue",
+                        "Conditional": false,
+                        "ConditionalVariableName": "ConditionalVariableName",
+                        "ConditionalValueColumn": "ConditionalValue",
+                        "FileName": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": {
+                        "Translation": [
+                            {
+                                "VariableName": "HaulDuration",
+                                "Value": "NA",
+                                "NewValue": "160"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "processName": "TranslateICESBiotic4",
+                    "functionName": "RstoxData::TranslateICESBiotic",
+                    "functionInputs": {
+                        "ICESBioticData": "TranslateICESBiotic_BiologyIndividualMaturity",
+                        "Translation": "DefineTranslation4"
+                    },
+                    "functionParameters": {
+                        "PreserveClass": true
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "DefineTranslation_M",
+                    "functionName": "RstoxData::DefineTranslation",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "UseProcessData": true,
+                        "DefinitionMethod": "TranslationTable",
+                        "TranslationTable": [
+                            {
+                                "ConditionalVariableName": "BiologyIndividualMaturity",
+                                "ConditionalValue": "61",
+                                "VariableName": "BiologyMaturityScale",
+                                "Value": "NA",
+                                "NewValue": "M6"
+                            },
+                            {
+                                "ConditionalVariableName": "BiologyIndividualMaturity",
+                                "ConditionalValue": "62",
+                                "VariableName": "BiologyMaturityScale",
+                                "Value": "NA",
+                                "NewValue": "M6"
+                            },
+                            {
+                                "ConditionalVariableName": "BiologyIndividualMaturity",
+                                "ConditionalValue": "63",
+                                "VariableName": "BiologyMaturityScale",
+                                "Value": "NA",
+                                "NewValue": "M6"
+                            },
+                            {
+                                "ConditionalVariableName": "BiologyIndividualMaturity",
+                                "ConditionalValue": "64",
+                                "VariableName": "BiologyMaturityScale",
+                                "Value": "NA",
+                                "NewValue": "M6"
+                            },
+                            {
+                                "ConditionalVariableName": "BiologyIndividualMaturity",
+                                "ConditionalValue": "65",
+                                "VariableName": "BiologyMaturityScale",
+                                "Value": "NA",
+                                "NewValue": "M6"
+                            },
+                            {
+                                "ConditionalVariableName": "BiologyIndividualMaturity",
+                                "ConditionalValue": "66",
+                                "VariableName": "BiologyMaturityScale",
+                                "Value": "NA",
+                                "NewValue": "M6"
+                            }
+                        ],
+                        "VariableName": "VariableName",
+                        "ValueColumn": "Value",
+                        "NewValueColumn": "NewValue",
+                        "Conditional": true,
+                        "ConditionalVariableName": "ConditionalVariableName",
+                        "ConditionalValueColumn": "ConditionalValue",
+                        "FileName": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": {
+                        "Translation": [
+                            {
+                                "ConditionalVariableName": "BiologyIndividualMaturity",
+                                "ConditionalValue": "61",
+                                "VariableName": "BiologyMaturityScale",
+                                "Value": "NA",
+                                "NewValue": "M6"
+                            },
+                            {
+                                "ConditionalVariableName": "BiologyIndividualMaturity",
+                                "ConditionalValue": "62",
+                                "VariableName": "BiologyMaturityScale",
+                                "Value": "NA",
+                                "NewValue": "M6"
+                            },
+                            {
+                                "ConditionalVariableName": "BiologyIndividualMaturity",
+                                "ConditionalValue": "63",
+                                "VariableName": "BiologyMaturityScale",
+                                "Value": "NA",
+                                "NewValue": "M6"
+                            },
+                            {
+                                "ConditionalVariableName": "BiologyIndividualMaturity",
+                                "ConditionalValue": "64",
+                                "VariableName": "BiologyMaturityScale",
+                                "Value": "NA",
+                                "NewValue": "M6"
+                            },
+                            {
+                                "ConditionalVariableName": "BiologyIndividualMaturity",
+                                "ConditionalValue": "65",
+                                "VariableName": "BiologyMaturityScale",
+                                "Value": "NA",
+                                "NewValue": "M6"
+                            },
+                            {
+                                "ConditionalVariableName": "BiologyIndividualMaturity",
+                                "ConditionalValue": "66",
+                                "VariableName": "BiologyMaturityScale",
+                                "Value": "NA",
+                                "NewValue": "M6"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "processName": "TranslateICESBiotic_M",
+                    "functionName": "RstoxData::TranslateICESBiotic",
+                    "functionInputs": {
+                        "ICESBioticData": "TranslateICESBiotic4",
+                        "Translation": "DefineTranslation_M"
+                    },
+                    "functionParameters": {
+                        "PreserveClass": true
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "DefineTranslation_AgeSource",
+                    "functionName": "RstoxData::DefineTranslation",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "UseProcessData": true,
+                        "DefinitionMethod": "TranslationTable",
+                        "TranslationTable": [
+                            {
+                                "VariableName": "BiologyAgeSource",
+                                "Value": "1",
+                                "NewValue": "Scale"
+                            },
+                            {
+                                "VariableName": "BiologyAgeSource",
+                                "Value": "2",
+                                "NewValue": "Otohlit"
+                            }
+                        ],
+                        "VariableName": "VariableName",
+                        "ValueColumn": "Value",
+                        "NewValueColumn": "NewValue",
+                        "Conditional": false,
+                        "ConditionalVariableName": "ConditionalVariableName",
+                        "ConditionalValueColumn": "ConditionalValue",
+                        "FileName": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": {
+                        "Translation": [
+                            {
+                                "VariableName": "BiologyAgeSource",
+                                "Value": "1",
+                                "NewValue": "Scale"
+                            },
+                            {
+                                "VariableName": "BiologyAgeSource",
+                                "Value": "2",
+                                "NewValue": "Otohlit"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "processName": "TranslateICESBiotic_agesource",
+                    "functionName": "RstoxData::TranslateICESBiotic",
+                    "functionInputs": {
+                        "ICESBioticData": "TranslateICESBiotic_M",
+                        "Translation": "DefineTranslation_AgeSource"
+                    },
+                    "functionParameters": {
+                        "PreserveClass": true
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                }
+            ],
+            "analysis": [
+
+            ],
+            "report": [
+                {
+                    "processName": "WriteICESBiotic",
+                    "functionName": "RstoxData::WriteICESBiotic",
+                    "functionInputs": {
+                        "ICESBioticData": "TranslateICESBiotic_agesource"
+                    },
+                    "functionParameters": {
+
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                }
+            ]
+        }
+    }
+}
+

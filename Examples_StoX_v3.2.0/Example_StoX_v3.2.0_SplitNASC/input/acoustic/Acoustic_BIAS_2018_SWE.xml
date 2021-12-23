@@ -1,0 +1,4568 @@
+<?xml version="1.0"?>
+<Acoustic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Instrument ID="I1">
+    <Frequency>38</Frequency>
+    <TransducerLocation IDREF="AC_TransducerLocation_BA" />
+    <TransducerManufacturer>Simrad</TransducerManufacturer>
+    <TransducerModel>ES38B</TransducerModel>
+    <TransducerSerial>12344321</TransducerSerial>
+    <TransducerBeamType IDREF="AC_TransducerBeamType_S2" />
+    <TransducerDepth>4.5</TransducerDepth>
+    <TransducerOrientation>elevation 0ÃÆÃÂž azimuth 0ÃÆÃÂž rotation 0ÃÆÃÂž</TransducerOrientation>
+    <TransducerPSI>7</TransducerPSI>
+    <TransducerBeamAngleMajor xsi:nil="true" />
+    <TransducerBeamAngleMinor xsi:nil="true" />
+    <TransceiverManufacturer>simrad</TransceiverManufacturer>
+    <TransceiverModel xsi:nil="true" />
+    <TransceiverSerial xsi:nil="true" />
+    <TransceiverFirmware xsi:nil="true" />
+    <Comments xsi:nil="true" />
+  </Instrument>
+  <Calibration ID="C1">
+    <Date>2018-10-02</Date>
+    <AcquisitionMethod IDREF="AC_AcquisitionMethod_SS" />
+    <ProcessingMethod IDREF="AC_ProcessingMethod_ER60" />
+    <AccuracyEstimate>0.20</AccuracyEstimate>
+    <Report xsi:nil="true" />
+    <Comments xsi:nil="true" />
+  </Calibration>
+  <DataAcquisition ID="DA1">
+    <SoftwareName IDREF="AC_DataAcquisitionSoftwareName_ER60" />
+    <SoftwareVersion>2.2.0</SoftwareVersion>
+    <StoredDataFormat IDREF="AC_StoredDataFormat_RAW" />
+    <PingDutyCycle>continuous pinging at 1 per second</PingDutyCycle>
+    <Comments xsi:nil="true" />
+  </DataAcquisition>
+  <DataProcessing ID="DP1">
+    <SoftwareName IDREF="AC_DataProcessingSoftwareName_LSSS" />
+    <SoftwareVersion>2.3.0</SoftwareVersion>
+    <TriwaveCorrection IDREF="AC_TriwaveCorrection_NA" />
+    <ChannelID xsi:nil="true" />
+    <Bandwidth xsi:nil="true" />
+    <Frequency>38</Frequency>
+    <TransceiverPower>2000</TransceiverPower>
+    <TransmitPulseLength>1.024</TransmitPulseLength>
+    <OnAxisGain>26.44</OnAxisGain>
+    <OnAxisGainUnit IDREF="AC_OnAxisGainUnit_dB" />
+    <SaCorrection xsi:nil="true" />
+    <Absorption xsi:nil="true" />
+    <AbsorptionDescription xsi:nil="true" />
+    <SoundSpeed xsi:nil="true" />
+    <SoundSpeedDescription xsi:nil="true" />
+    <TransducerPSI>3</TransducerPSI>
+    <Comments xsi:nil="true" />
+  </DataProcessing>
+  <Vocabulary>
+    <Survey>
+      <Code ID="AC_Survey_BIAS" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_Survey.xml">BIAS</Code>
+    </Survey>
+    <Country>
+      <Code ID="ISO_3166_SE" CodeType="https://acoustic.ices.dk/Services/Schema/XML/ISO_3166.xml">SE</Code>
+    </Country>
+    <Platform>
+      <Code ID="SHIPC_26D4" CodeType="https://acoustic.ices.dk/Services/Schema/XML/SHIPC.xml">26D4</Code>
+    </Platform>
+    <Organisation />
+    <Origin>
+      <Code ID="AC_LogOrigin_start" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_LogOrigin.xml">start</Code>
+    </Origin>
+    <LogValidity>
+      <Code ID="AC_LogValidity_V" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_LogValidity.xml">V</Code>
+    </LogValidity>
+    <SaCategory>
+      <Code ID="AC_SaCategory_MIX" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_SaCategory.xml">MIX</Code>
+    </SaCategory>
+    <Type>
+      <Code ID="AC_AcousticDataType_C" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_AcousticDataType.xml">C</Code>
+    </Type>
+    <Unit>
+      <Code ID="AC_DataUnit_m2nmi-2" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_DataUnit.xml">m2nmi-2</Code>
+    </Unit>
+    <PingAxisIntervalType>
+      <Code ID="AC_PingAxisIntervalType_distance" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_PingAxisIntervalType.xml">distance</Code>
+    </PingAxisIntervalType>
+    <PingAxisIntervalUnit>
+      <Code ID="AC_PingAxisIntervalUnit_nmi" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_PingAxisIntervalUnit.xml">nmi</Code>
+    </PingAxisIntervalUnit>
+    <PingAxisIntervalOrigin>
+      <Code ID="AC_PingAxisIntervalOrigin_start" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_PingAxisIntervalOrigin.xml">start</Code>
+    </PingAxisIntervalOrigin>
+    <TransducerLocation>
+      <Code ID="AC_TransducerLocation_BA" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_TransducerLocation.xml">BA</Code>
+    </TransducerLocation>
+    <TransducerBeamType>
+      <Code ID="AC_TransducerBeamType_S2" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_TransducerBeamType.xml">S2</Code>
+    </TransducerBeamType>
+    <AcquisitionMethod>
+      <Code ID="AC_AcquisitionMethod_SS" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_AcquisitionMethod.xml">SS</Code>
+    </AcquisitionMethod>
+    <ProcessingMethod>
+      <Code ID="AC_ProcessingMethod_ER60" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_ProcessingMethod.xml">ER60</Code>
+    </ProcessingMethod>
+    <DataAcquisitionSoftwareName>
+      <Code ID="AC_DataAcquisitionSoftwareName_ER60" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_DataAcquisitionSoftwareName.xml">ER60</Code>
+    </DataAcquisitionSoftwareName>
+    <StoredDataFormat>
+      <Code ID="AC_StoredDataFormat_RAW" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_StoredDataFormat.xml">RAW</Code>
+    </StoredDataFormat>
+    <DataProcessingSoftwareName>
+      <Code ID="AC_DataProcessingSoftwareName_LSSS" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_DataProcessingSoftwareName.xml">LSSS</Code>
+    </DataProcessingSoftwareName>
+    <TriwaveCorrection>
+      <Code ID="AC_TriwaveCorrection_NA" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_TriwaveCorrection.xml">NA</Code>
+    </TriwaveCorrection>
+    <OnAxisGainUnit>
+      <Code ID="AC_OnAxisGainUnit_dB" CodeType="https://acoustic.ices.dk/Services/Schema/XML/AC_OnAxisGainUnit.xml">dB</Code>
+    </OnAxisGainUnit>
+    <Stratum />
+    <SpeciesCode />
+  </Vocabulary>
+  <Cruise>
+    <Survey>
+      <Code IDREF="AC_Survey_BIAS" />
+    </Survey>
+    <Country IDREF="ISO_3166_SE" />
+    <Platform IDREF="SHIPC_26D4" />
+    <StartDate>2018-10-02</StartDate>
+    <EndDate>2018-10-14</EndDate>
+    <Organisation />
+    <LocalID>BIAS_2018_SWE</LocalID>
+    <Log>
+      <Distance>7486</Distance>
+      <Time>2018-10-08T20:12:03</Time>
+      <Latitude>58.99567</Latitude>
+      <Longitude>20.0087</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>94.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>466.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7487</Distance>
+      <Time>2018-10-08T20:20:28</Time>
+      <Latitude>58.98262</Latitude>
+      <Longitude>20.02892</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>73.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>522</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7488</Distance>
+      <Time>2018-10-08T20:29:16</Time>
+      <Latitude>58.9696</Latitude>
+      <Longitude>20.04942</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>130.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>669.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7489</Distance>
+      <Time>2018-10-08T20:37:38</Time>
+      <Latitude>58.95661</Latitude>
+      <Longitude>20.07013</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>77.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>590.6</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7490</Distance>
+      <Time>2018-10-08T20:46:27</Time>
+      <Latitude>58.94373</Latitude>
+      <Longitude>20.09092</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>155.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>491.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7491</Distance>
+      <Time>2018-10-08T20:54:56</Time>
+      <Latitude>58.93106</Latitude>
+      <Longitude>20.11219</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>89.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>424</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7492</Distance>
+      <Time>2018-10-08T21:03:06</Time>
+      <Latitude>58.92527</Latitude>
+      <Longitude>20.14038</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>95.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>419.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7493</Distance>
+      <Time>2018-10-08T21:11:25</Time>
+      <Latitude>58.92503</Latitude>
+      <Longitude>20.1728</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>98.9</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>504.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7494</Distance>
+      <Time>2018-10-08T21:19:45</Time>
+      <Latitude>58.92499</Latitude>
+      <Longitude>20.20518</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>82.4</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>551.6</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7495</Distance>
+      <Time>2018-10-08T21:28:15</Time>
+      <Latitude>58.92511</Latitude>
+      <Longitude>20.23766</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>92.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>866.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7496</Distance>
+      <Time>2018-10-08T21:36:47</Time>
+      <Latitude>58.92537</Latitude>
+      <Longitude>20.27011</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>86.4</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>701.6</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7497</Distance>
+      <Time>2018-10-08T21:44:59</Time>
+      <Latitude>58.92555</Latitude>
+      <Longitude>20.30259</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>99.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>615.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7498</Distance>
+      <Time>2018-10-08T21:53:32</Time>
+      <Latitude>58.92549</Latitude>
+      <Longitude>20.33496</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>88.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>750.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7499</Distance>
+      <Time>2018-10-08T22:02:36</Time>
+      <Latitude>58.91542</Latitude>
+      <Longitude>20.35592</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>159</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>982.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7500</Distance>
+      <Time>2018-10-08T22:11:55</Time>
+      <Latitude>58.89865</Latitude>
+      <Longitude>20.35762</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>88.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>926.6</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7501</Distance>
+      <Time>2018-10-08T22:21:05</Time>
+      <Latitude>58.88192</Latitude>
+      <Longitude>20.35948</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>96.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>675.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7502</Distance>
+      <Time>2018-10-08T22:30:31</Time>
+      <Latitude>58.86516</Latitude>
+      <Longitude>20.35952</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>96.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>755.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7503</Distance>
+      <Time>2018-10-08T22:39:57</Time>
+      <Latitude>58.8484</Latitude>
+      <Longitude>20.35908</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>95.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>585.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7504</Distance>
+      <Time>2018-10-08T22:49:57</Time>
+      <Latitude>58.83162</Latitude>
+      <Longitude>20.35955</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>177.4</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>460</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7505</Distance>
+      <Time>2018-10-08T22:58:34</Time>
+      <Latitude>58.81487</Latitude>
+      <Longitude>20.35877</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>181.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>390.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7506</Distance>
+      <Time>2018-10-08T23:08:01</Time>
+      <Latitude>58.79813</Latitude>
+      <Longitude>20.3587</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>189.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>339.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7507</Distance>
+      <Time>2018-10-08T23:17:06</Time>
+      <Latitude>58.78135</Latitude>
+      <Longitude>20.35809</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>99.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>288.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7508</Distance>
+      <Time>2018-10-08T23:25:48</Time>
+      <Latitude>58.76455</Latitude>
+      <Longitude>20.36001</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>99.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>739.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7509</Distance>
+      <Time>2018-10-08T23:33:52</Time>
+      <Latitude>58.74776</Latitude>
+      <Longitude>20.36176</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>99.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>585.1</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7510</Distance>
+      <Time>2018-10-08T23:42:12</Time>
+      <Latitude>58.73109</Latitude>
+      <Longitude>20.36182</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>99.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>354.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7511</Distance>
+      <Time>2018-10-08T23:49:31</Time>
+      <Latitude>58.72521</Latitude>
+      <Longitude>20.38705</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>87.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>341</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7512</Distance>
+      <Time>2018-10-08T23:55:38</Time>
+      <Latitude>58.72514</Latitude>
+      <Longitude>20.41928</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>159.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>595.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7513</Distance>
+      <Time>2018-10-09T00:01:50</Time>
+      <Latitude>58.72535</Latitude>
+      <Longitude>20.45157</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>162.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1038.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7514</Distance>
+      <Time>2018-10-09T00:07:56</Time>
+      <Latitude>58.72556</Latitude>
+      <Longitude>20.48385</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>161.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1255.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7515</Distance>
+      <Time>2018-10-09T00:14:02</Time>
+      <Latitude>58.72528</Latitude>
+      <Longitude>20.51615</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>164.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1036.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7516</Distance>
+      <Time>2018-10-09T00:20:14</Time>
+      <Latitude>58.72504</Latitude>
+      <Longitude>20.54836</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>159.9</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>826.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7517</Distance>
+      <Time>2018-10-09T00:29:08</Time>
+      <Latitude>58.71808</Latitude>
+      <Longitude>20.57198</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>153.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>773.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7518</Distance>
+      <Time>2018-10-09T00:41:09</Time>
+      <Latitude>58.70154</Latitude>
+      <Longitude>20.57657</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>152.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>521.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7519</Distance>
+      <Time>2018-10-09T00:53:27</Time>
+      <Latitude>58.68481</Latitude>
+      <Longitude>20.57703</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>148.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1450.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7520</Distance>
+      <Time>2018-10-09T01:05:47</Time>
+      <Latitude>58.66806</Latitude>
+      <Longitude>20.57575</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>135.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1933.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7521</Distance>
+      <Time>2018-10-09T01:16:20</Time>
+      <Latitude>58.65139</Latitude>
+      <Longitude>20.57511</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>120.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1024.6</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7522</Distance>
+      <Time>2018-10-09T01:26:55</Time>
+      <Latitude>58.63465</Latitude>
+      <Longitude>20.57651</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>110.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>683.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7523</Distance>
+      <Time>2018-10-09T01:38:19</Time>
+      <Latitude>58.61789</Latitude>
+      <Longitude>20.5779</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>103.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>882.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7524</Distance>
+      <Time>2018-10-09T01:51:31</Time>
+      <Latitude>58.60128</Latitude>
+      <Longitude>20.57954</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>115.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>940.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7525</Distance>
+      <Time>2018-10-09T02:02:37</Time>
+      <Latitude>58.58883</Latitude>
+      <Longitude>20.55839</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>129.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>931.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7526</Distance>
+      <Time>2018-10-09T02:12:32</Time>
+      <Latitude>58.57212</Latitude>
+      <Longitude>20.55833</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>60</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>755.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7527</Distance>
+      <Time>2018-10-09T02:25:25</Time>
+      <Latitude>58.55547</Latitude>
+      <Longitude>20.56153</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>72.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>924.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7528</Distance>
+      <Time>2018-10-09T02:38:29</Time>
+      <Latitude>58.55252</Latitude>
+      <Longitude>20.53285</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>129.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>904.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7529</Distance>
+      <Time>2018-10-09T02:50:04</Time>
+      <Latitude>58.55122</Latitude>
+      <Longitude>20.50096</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>102.4</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1251.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7530</Distance>
+      <Time>2018-10-09T03:01:12</Time>
+      <Latitude>58.5514</Latitude>
+      <Longitude>20.46886</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>94.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1292.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7531</Distance>
+      <Time>2018-10-09T03:12:03</Time>
+      <Latitude>58.55177</Latitude>
+      <Longitude>20.43684</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>113.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1129.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7532</Distance>
+      <Time>2018-10-09T03:22:39</Time>
+      <Latitude>58.5518</Latitude>
+      <Longitude>20.40483</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>99.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1301.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7533</Distance>
+      <Time>2018-10-09T03:32:51</Time>
+      <Latitude>58.55185</Latitude>
+      <Longitude>20.37282</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>89.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1021.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7534</Distance>
+      <Time>2018-10-09T03:43:22</Time>
+      <Latitude>58.55212</Latitude>
+      <Longitude>20.34066</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>98.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1516.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7535</Distance>
+      <Time>2018-10-09T03:54:14</Time>
+      <Latitude>58.5527</Latitude>
+      <Longitude>20.30875</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>105.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>852.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7545</Distance>
+      <Time>2018-10-09T07:01:32</Time>
+      <Latitude>58.66037</Latitude>
+      <Longitude>20.31461</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>95.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1696.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7546</Distance>
+      <Time>2018-10-09T07:08:00</Time>
+      <Latitude>58.67735</Latitude>
+      <Longitude>20.3138</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>101.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>705.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7547</Distance>
+      <Time>2018-10-09T07:13:56</Time>
+      <Latitude>58.69342</Latitude>
+      <Longitude>20.30695</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>172.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>284</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7548</Distance>
+      <Time>2018-10-09T07:20:31</Time>
+      <Latitude>58.70871</Latitude>
+      <Longitude>20.29407</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>94.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>252.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7549</Distance>
+      <Time>2018-10-09T07:27:57</Time>
+      <Latitude>58.72411</Latitude>
+      <Longitude>20.2814</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>178.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>930.6</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7558</Distance>
+      <Time>2018-10-09T10:16:05</Time>
+      <Latitude>58.84773</Latitude>
+      <Longitude>20.24712</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>102.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>425.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7559</Distance>
+      <Time>2018-10-09T10:22:14</Time>
+      <Latitude>58.85125</Latitude>
+      <Longitude>20.21549</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>101</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>171.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7560</Distance>
+      <Time>2018-10-09T10:29:03</Time>
+      <Latitude>58.85509</Latitude>
+      <Longitude>20.18395</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>167.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>291.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7561</Distance>
+      <Time>2018-10-09T10:35:45</Time>
+      <Latitude>58.86217</Latitude>
+      <Longitude>20.15496</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>128.9</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>998.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7562</Distance>
+      <Time>2018-10-09T10:42:24</Time>
+      <Latitude>58.87149</Latitude>
+      <Longitude>20.12815</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>142.4</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1243.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7563</Distance>
+      <Time>2018-10-09T10:49:26</Time>
+      <Latitude>58.88087</Latitude>
+      <Longitude>20.10125</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>173.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>64.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7564</Distance>
+      <Time>2018-10-09T10:56:52</Time>
+      <Latitude>58.89042</Latitude>
+      <Longitude>20.0748</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>187.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>281.1</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7565</Distance>
+      <Time>2018-10-09T11:05:29</Time>
+      <Latitude>58.90028</Latitude>
+      <Longitude>20.04865</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>102.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>77.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7566</Distance>
+      <Time>2018-10-09T11:14:09</Time>
+      <Latitude>58.90997</Latitude>
+      <Longitude>20.02216</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>91.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>360.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7567</Distance>
+      <Time>2018-10-09T11:23:03</Time>
+      <Latitude>58.91942</Latitude>
+      <Longitude>19.99548</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>89.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>571.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7568</Distance>
+      <Time>2018-10-09T11:31:53</Time>
+      <Latitude>58.92854</Latitude>
+      <Longitude>19.96823</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>86.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1941.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7569</Distance>
+      <Time>2018-10-09T11:40:37</Time>
+      <Latitude>58.93753</Latitude>
+      <Longitude>19.94096</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>94.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>343.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7570</Distance>
+      <Time>2018-10-09T11:49:11</Time>
+      <Latitude>58.94665</Latitude>
+      <Longitude>19.91366</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>61.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>428.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7571</Distance>
+      <Time>2018-10-09T11:57:49</Time>
+      <Latitude>58.9558</Latitude>
+      <Longitude>19.88659</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>111.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>390.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7572</Distance>
+      <Time>2018-10-09T12:06:49</Time>
+      <Latitude>58.96502</Latitude>
+      <Longitude>19.8595</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>56.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>381.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7573</Distance>
+      <Time>2018-10-09T12:15:47</Time>
+      <Latitude>58.97436</Latitude>
+      <Longitude>19.83249</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>84.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>757.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7574</Distance>
+      <Time>2018-10-09T12:24:45</Time>
+      <Latitude>58.98363</Latitude>
+      <Longitude>19.80546</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>57.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>383.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7575</Distance>
+      <Time>2018-10-09T12:33:37</Time>
+      <Latitude>58.99301</Latitude>
+      <Longitude>19.77857</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>54.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>419.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7593</Distance>
+      <Time>2018-10-09T16:49:08</Time>
+      <Latitude>58.9837</Latitude>
+      <Longitude>19.57047</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>59.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>314.6</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7594</Distance>
+      <Time>2018-10-09T16:57:45</Time>
+      <Latitude>58.96693</Latitude>
+      <Longitude>19.57047</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>62.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>605.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7595</Distance>
+      <Time>2018-10-09T17:05:28</Time>
+      <Latitude>58.95017</Latitude>
+      <Longitude>19.5703</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>73</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>372.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7596</Distance>
+      <Time>2018-10-09T17:13:38</Time>
+      <Latitude>58.93342</Latitude>
+      <Longitude>19.57027</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>79.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>362.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7597</Distance>
+      <Time>2018-10-09T17:22:03</Time>
+      <Latitude>58.91664</Latitude>
+      <Longitude>19.56947</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>121.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>402.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7598</Distance>
+      <Time>2018-10-09T17:29:56</Time>
+      <Latitude>58.89984</Latitude>
+      <Longitude>19.56809</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>127.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>392.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7599</Distance>
+      <Time>2018-10-09T17:37:45</Time>
+      <Latitude>58.88309</Latitude>
+      <Longitude>19.56724</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>114.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>308.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7600</Distance>
+      <Time>2018-10-09T17:45:15</Time>
+      <Latitude>58.86628</Latitude>
+      <Longitude>19.5663</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>68.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>391.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7601</Distance>
+      <Time>2018-10-09T17:52:56</Time>
+      <Latitude>58.84953</Latitude>
+      <Longitude>19.56545</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>74.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>546.1</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7602</Distance>
+      <Time>2018-10-09T18:00:26</Time>
+      <Latitude>58.83279</Latitude>
+      <Longitude>19.56521</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>85.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>461.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7603</Distance>
+      <Time>2018-10-09T18:08:08</Time>
+      <Latitude>58.81601</Latitude>
+      <Longitude>19.56591</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>132.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>745.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7610</Distance>
+      <Time>2018-10-09T20:24:16</Time>
+      <Latitude>58.75309</Latitude>
+      <Longitude>19.52802</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>153.9</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>512.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7611</Distance>
+      <Time>2018-10-09T20:32:33</Time>
+      <Latitude>58.74223</Latitude>
+      <Longitude>19.55275</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>83.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>396.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7612</Distance>
+      <Time>2018-10-09T20:40:34</Time>
+      <Latitude>58.72751</Latitude>
+      <Longitude>19.5632</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>86.9</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>601.1</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7613</Distance>
+      <Time>2018-10-09T20:48:42</Time>
+      <Latitude>58.71077</Latitude>
+      <Longitude>19.5649</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>139.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>720.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7614</Distance>
+      <Time>2018-10-09T20:56:57</Time>
+      <Latitude>58.69402</Latitude>
+      <Longitude>19.56624</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>123.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>761.1</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7615</Distance>
+      <Time>2018-10-09T21:05:24</Time>
+      <Latitude>58.67728</Latitude>
+      <Longitude>19.56742</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>123.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>834.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7616</Distance>
+      <Time>2018-10-09T21:13:14</Time>
+      <Latitude>58.66047</Latitude>
+      <Longitude>19.56783</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>119.4</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>776.1</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7617</Distance>
+      <Time>2018-10-09T21:20:42</Time>
+      <Latitude>58.64369</Latitude>
+      <Longitude>19.56779</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>105.9</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>620.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7618</Distance>
+      <Time>2018-10-09T21:28:04</Time>
+      <Latitude>58.62691</Latitude>
+      <Longitude>19.56773</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>109.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>421.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7619</Distance>
+      <Time>2018-10-09T21:35:19</Time>
+      <Latitude>58.61015</Latitude>
+      <Longitude>19.56798</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>98.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>454.1</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7620</Distance>
+      <Time>2018-10-09T21:43:22</Time>
+      <Latitude>58.59338</Latitude>
+      <Longitude>19.56889</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>90.9</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>487.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7621</Distance>
+      <Time>2018-10-09T21:51:13</Time>
+      <Latitude>58.57662</Latitude>
+      <Longitude>19.56937</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>48</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>475</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7622</Distance>
+      <Time>2018-10-09T21:59:09</Time>
+      <Latitude>58.55986</Latitude>
+      <Longitude>19.57026</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>48.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>300.1</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7623</Distance>
+      <Time>2018-10-09T22:06:58</Time>
+      <Latitude>58.54309</Latitude>
+      <Longitude>19.57038</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>92.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>358.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7624</Distance>
+      <Time>2018-10-09T22:14:41</Time>
+      <Latitude>58.52631</Latitude>
+      <Longitude>19.57055</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>87.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>482.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7625</Distance>
+      <Time>2018-10-09T22:22:26</Time>
+      <Latitude>58.50955</Latitude>
+      <Longitude>19.57087</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>83</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>455.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7626</Distance>
+      <Time>2018-10-09T22:29:58</Time>
+      <Latitude>58.49275</Latitude>
+      <Longitude>19.57103</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>44.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>366.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7627</Distance>
+      <Time>2018-10-09T22:36:48</Time>
+      <Latitude>58.47589</Latitude>
+      <Longitude>19.57094</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>87.4</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>400.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7628</Distance>
+      <Time>2018-10-09T22:43:01</Time>
+      <Latitude>58.45912</Latitude>
+      <Longitude>19.57035</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>81.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>475.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7629</Distance>
+      <Time>2018-10-09T22:49:28</Time>
+      <Latitude>58.44238</Latitude>
+      <Longitude>19.5699</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>77.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>467.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7630</Distance>
+      <Time>2018-10-09T22:56:09</Time>
+      <Latitude>58.42557</Latitude>
+      <Longitude>19.56989</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>75.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>577.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7631</Distance>
+      <Time>2018-10-09T23:02:43</Time>
+      <Latitude>58.40877</Latitude>
+      <Longitude>19.56994</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>82.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>560.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7632</Distance>
+      <Time>2018-10-09T23:09:31</Time>
+      <Latitude>58.39204</Latitude>
+      <Longitude>19.57063</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>100</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>365.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7633</Distance>
+      <Time>2018-10-09T23:16:13</Time>
+      <Latitude>58.37521</Latitude>
+      <Longitude>19.57147</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>109</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>445.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7634</Distance>
+      <Time>2018-10-09T23:22:34</Time>
+      <Latitude>58.35846</Latitude>
+      <Longitude>19.57207</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>104.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>469.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7635</Distance>
+      <Time>2018-10-09T23:29:05</Time>
+      <Latitude>58.34167</Latitude>
+      <Longitude>19.57273</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>113</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>339.6</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7636</Distance>
+      <Time>2018-10-09T23:35:34</Time>
+      <Latitude>58.32489</Latitude>
+      <Longitude>19.57337</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>64.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>211.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7637</Distance>
+      <Time>2018-10-09T23:42:19</Time>
+      <Latitude>58.30817</Latitude>
+      <Longitude>19.57494</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>66.9</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>272.6</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7638</Distance>
+      <Time>2018-10-09T23:49:33</Time>
+      <Latitude>58.30091</Latitude>
+      <Longitude>19.55268</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>112.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>293.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7639</Distance>
+      <Time>2018-10-09T23:56:32</Time>
+      <Latitude>58.29976</Latitude>
+      <Longitude>19.52091</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>108.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>286.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7640</Distance>
+      <Time>2018-10-10T00:03:17</Time>
+      <Latitude>58.29962</Latitude>
+      <Longitude>19.48906</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>99.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>230.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7641</Distance>
+      <Time>2018-10-10T00:09:57</Time>
+      <Latitude>58.29938</Latitude>
+      <Longitude>19.45714</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>89.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>237.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7642</Distance>
+      <Time>2018-10-10T00:16:43</Time>
+      <Latitude>58.299</Latitude>
+      <Longitude>19.42529</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>75.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>328.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7643</Distance>
+      <Time>2018-10-10T00:23:21</Time>
+      <Latitude>58.29867</Latitude>
+      <Longitude>19.39344</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>68.9</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>222.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7644</Distance>
+      <Time>2018-10-10T00:29:51</Time>
+      <Latitude>58.29866</Latitude>
+      <Longitude>19.36151</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>57.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>156.1</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7645</Distance>
+      <Time>2018-10-10T00:36:13</Time>
+      <Latitude>58.29881</Latitude>
+      <Longitude>19.32967</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>36.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>588.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7646</Distance>
+      <Time>2018-10-10T00:42:35</Time>
+      <Latitude>58.29807</Latitude>
+      <Longitude>19.29779</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>25.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>489</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7647</Distance>
+      <Time>2018-10-10T00:48:52</Time>
+      <Latitude>58.29735</Latitude>
+      <Longitude>19.26594</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>20</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>467.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7648</Distance>
+      <Time>2018-10-10T00:55:19</Time>
+      <Latitude>58.29676</Latitude>
+      <Longitude>19.2341</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>28.4</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>2177.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7649</Distance>
+      <Time>2018-10-10T01:01:54</Time>
+      <Latitude>58.29736</Latitude>
+      <Longitude>19.20224</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>44.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1278.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7650</Distance>
+      <Time>2018-10-10T01:08:26</Time>
+      <Latitude>58.29808</Latitude>
+      <Longitude>19.17041</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>57.9</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>723.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7656</Distance>
+      <Time>2018-10-10T02:58:19</Time>
+      <Latitude>58.24883</Latitude>
+      <Longitude>19.19325</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>59.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1050.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7657</Distance>
+      <Time>2018-10-10T03:07:12</Time>
+      <Latitude>58.24847</Latitude>
+      <Longitude>19.16161</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>66.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>779.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7658</Distance>
+      <Time>2018-10-10T03:15:20</Time>
+      <Latitude>58.24058</Latitude>
+      <Longitude>19.14381</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>64.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1204.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7659</Distance>
+      <Time>2018-10-10T03:22:45</Time>
+      <Latitude>58.2238</Latitude>
+      <Longitude>19.14462</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>60.4</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1117.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7660</Distance>
+      <Time>2018-10-10T03:30:05</Time>
+      <Latitude>58.20694</Latitude>
+      <Longitude>19.14449</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>52.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>802</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7661</Distance>
+      <Time>2018-10-10T03:37:25</Time>
+      <Latitude>58.19019</Latitude>
+      <Longitude>19.14487</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>45.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1630.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7662</Distance>
+      <Time>2018-10-10T03:44:48</Time>
+      <Latitude>58.1734</Latitude>
+      <Longitude>19.14465</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>28.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1911.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7663</Distance>
+      <Time>2018-10-10T03:52:05</Time>
+      <Latitude>58.15659</Latitude>
+      <Longitude>19.14401</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>41.9</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1978.7</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7664</Distance>
+      <Time>2018-10-10T03:59:06</Time>
+      <Latitude>58.13979</Latitude>
+      <Longitude>19.14268</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>50.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>2994.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7665</Distance>
+      <Time>2018-10-10T04:05:55</Time>
+      <Latitude>58.12304</Latitude>
+      <Longitude>19.14068</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>62.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>3612.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7666</Distance>
+      <Time>2018-10-10T04:13:07</Time>
+      <Latitude>58.10904</Latitude>
+      <Longitude>19.14781</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>56.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>6829.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7667</Distance>
+      <Time>2018-10-10T04:20:12</Time>
+      <Latitude>58.10859</Latitude>
+      <Longitude>19.17964</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>41.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>20892</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7668</Distance>
+      <Time>2018-10-10T04:27:07</Time>
+      <Latitude>58.10807</Latitude>
+      <Longitude>19.21134</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>39.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>2054.2</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7669</Distance>
+      <Time>2018-10-10T04:34:08</Time>
+      <Latitude>58.10765</Latitude>
+      <Longitude>19.24303</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>33.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1592.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7670</Distance>
+      <Time>2018-10-10T04:41:10</Time>
+      <Latitude>58.10738</Latitude>
+      <Longitude>19.2748</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>27.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>1295.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7671</Distance>
+      <Time>2018-10-10T04:48:09</Time>
+      <Latitude>58.10765</Latitude>
+      <Longitude>19.3065</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>39.6</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>508.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7672</Distance>
+      <Time>2018-10-10T04:55:03</Time>
+      <Latitude>58.10817</Latitude>
+      <Longitude>19.33822</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>51.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>15255.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7682</Distance>
+      <Time>2018-10-10T07:54:08</Time>
+      <Latitude>58.13792</Latitude>
+      <Longitude>19.58522</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>147.5</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>455.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7683</Distance>
+      <Time>2018-10-10T08:00:50</Time>
+      <Latitude>58.13237</Latitude>
+      <Longitude>19.61535</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>156.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>195.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7684</Distance>
+      <Time>2018-10-10T08:07:20</Time>
+      <Latitude>58.1267</Latitude>
+      <Longitude>19.6453</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>162.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>179.9</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7685</Distance>
+      <Time>2018-10-10T08:13:20</Time>
+      <Latitude>58.12098</Latitude>
+      <Longitude>19.67513</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>164.1</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>234.4</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7686</Distance>
+      <Time>2018-10-10T08:19:19</Time>
+      <Latitude>58.11534</Latitude>
+      <Longitude>19.70511</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>160.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>567.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7687</Distance>
+      <Time>2018-10-10T08:25:15</Time>
+      <Latitude>58.10961</Latitude>
+      <Longitude>19.7349</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>151.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>293.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7688</Distance>
+      <Time>2018-10-10T08:31:32</Time>
+      <Latitude>58.09477</Latitude>
+      <Longitude>19.74438</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>158.8</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>264.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7689</Distance>
+      <Time>2018-10-10T08:37:39</Time>
+      <Latitude>58.07796</Latitude>
+      <Longitude>19.74511</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>158.3</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>173.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7690</Distance>
+      <Time>2018-10-10T08:43:34</Time>
+      <Latitude>58.06113</Latitude>
+      <Longitude>19.74546</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>158.9</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>293.5</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7691</Distance>
+      <Time>2018-10-10T08:49:31</Time>
+      <Latitude>58.04435</Latitude>
+      <Longitude>19.74629</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>165.7</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>180.3</Value>
+        </Data>
+      </Sample>
+    </Log>
+    <Log>
+      <Distance>7692</Distance>
+      <Time>2018-10-10T08:55:34</Time>
+      <Latitude>58.02753</Latitude>
+      <Longitude>19.74739</Longitude>
+      <Origin IDREF="AC_LogOrigin_start" />
+      <Validity IDREF="AC_LogValidity_V" />
+      <BottomDepth xsi:nil="true" />
+      <Sample>
+        <ChannelDepthUpper>10</ChannelDepthUpper>
+        <ChannelDepthLower>177.2</ChannelDepthLower>
+        <PingAxisInterval>1</PingAxisInterval>
+        <PingAxisIntervalType IDREF="AC_PingAxisIntervalType_distance" />
+        <PingAxisIntervalUnit IDREF="AC_PingAxisIntervalUnit_nmi" />
+        <SvThreshold>-60</SvThreshold>
+        <Instrument IDREF="I1" />
+        <Calibration IDREF="C1" />
+        <DataAcquisition IDREF="DA1" />
+        <DataProcessing IDREF="DP1" />
+        <PingAxisIntervalOrigin IDREF="AC_PingAxisIntervalOrigin_start" />
+        <Data>
+          <SaCategory IDREF="AC_SaCategory_MIX" />
+          <EchoType />
+          <Type IDREF="AC_AcousticDataType_C" />
+          <Unit IDREF="AC_DataUnit_m2nmi-2" />
+          <Value>121.8</Value>
+        </Data>
+      </Sample>
+    </Log>
+  </Cruise>
+</Acoustic>

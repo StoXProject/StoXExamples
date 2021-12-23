@@ -1,0 +1,954 @@
+{
+    "project": {
+        "TimeSaved": "2021-12-23T01:07:47.625Z",
+        "RVersion": "R version 4.1.2 (2021-11-01)",
+        "RstoxPackageVersion": [
+            "RstoxFramework_3.2.0",
+            "RstoxBase_1.5.0",
+            "RstoxData_1.3.0"
+        ],
+        "CertifiedRstoxPackageVersion": [
+            "RstoxFramework_3.2.0",
+            "RstoxBase_1.5.0",
+            "RstoxData_1.3.0"
+        ],
+        "AllCertifiedRstoxPackageVersion": true,
+        "OfficialRstoxFrameworkVersion": true,
+        "DependentPackageVersion": [
+            "geojsonsf_2.0.1",
+            "data.table_1.14.2",
+            "jsonlite_1.7.2",
+            "jsonvalidate_1.3.2",
+            "rgdal_1.5-28",
+            "sp_1.4-6",
+            "sf_1.0-5",
+            "xml2_1.3.3",
+            "stringr_1.4.0",
+            "stringi_1.7.6",
+            "rgeos_0.5-9",
+            "lwgeom_0.2-8",
+            "ggplot2_3.3.5",
+            "units_0.7-2",
+            "Rcpp_1.0.7",
+            "xslt_1.4.3",
+            "geometries_0.2.0",
+            "jsonify_1.2.1",
+            "rapidjsonr_1.2.0",
+            "sfheaders_0.4.0",
+            "digest_0.6.29",
+            "glue_1.6.0",
+            "gtable_0.3.0",
+            "isoband_0.2.5",
+            "MASS_7.3-53.1",
+            "mgcv_1.8-34",
+            "rlang_0.4.12",
+            "scales_1.1.1",
+            "tibble_3.1.6",
+            "withr_2.4.3",
+            "V8_3.6.0",
+            "classInt_0.4-3",
+            "DBI_1.1.2",
+            "magrittr_2.0.1",
+            "s2_1.0.7",
+            "lattice_0.20-41",
+            "nlme_3.1-152",
+            "Matrix_1.2-18",
+            "farver_2.1.0",
+            "labeling_0.4.2",
+            "lifecycle_1.0.1",
+            "munsell_0.5.0",
+            "R6_2.5.1",
+            "RColorBrewer_1.1-2",
+            "viridisLite_0.4.0",
+            "colorspace_2.0-2",
+            "ellipsis_0.3.2",
+            "fansi_0.5.0",
+            "pillar_1.6.4",
+            "pkgconfig_2.0.3",
+            "vctrs_0.3.8",
+            "cli_3.1.0",
+            "crayon_1.4.2",
+            "utf8_1.2.2",
+            "curl_4.3.2",
+            "e1071_1.7-9",
+            "class_7.3-18",
+            "KernSmooth_2.23-18",
+            "proxy_0.4-26",
+            "wk_0.5.0",
+            "cpp11_0.4.2"
+        ],
+        "Application": "StoX 3.2.0",
+        "models": {
+            "baseline": [
+                {
+                    "processName": "ReadBiotic",
+                    "functionName": "RstoxData::ReadBiotic",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "FileNames": "input/biotic/Biotic_BIAS2019.xml"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": false
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "StoxBiotic",
+                    "functionName": "RstoxData::StoxBiotic",
+                    "functionInputs": {
+                        "BioticData": "ReadBiotic"
+                    },
+                    "functionParameters": {
+
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": true,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "AddToStoxBiotic",
+                    "functionName": "RstoxData::AddToStoxBiotic",
+                    "functionInputs": {
+                        "StoxBioticData": "StoxBiotic",
+                        "BioticData": "ReadBiotic"
+                    },
+                    "functionParameters": {
+                        "VariableNames": [
+                            "StockCode",
+                            "IndividualMaturity",
+                            "MaturityScale"
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "DefineTranslation",
+                    "functionName": "RstoxData::DefineTranslation",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "UseProcessData": true,
+                        "DefinitionMethod": "ResourceFile",
+                        "TranslationTable": [
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "W1",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "W2",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "W3",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "W4",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "W5",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "W6",
+                                "NewValue": "Mature"
+                            }
+                        ],
+                        "VariableName": "VariableName",
+                        "ValueColumn": "Value",
+                        "NewValueColumn": "NewValue",
+                        "Conditional": false,
+                        "ConditionalVariableName": "ConditionalVariableName",
+                        "ConditionalValueColumn": "ConditionalValue",
+                        "FileName": "input/IndividualMaturityTranslation.txt"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": {
+                        "Translation": [
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "61",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "62",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "63",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "64",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "65",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "66",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "A",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "B",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "B1",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "B2",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "B3",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "B4",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "B5",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "B6",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "B7",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "B8",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "Ba",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "Bb",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "C",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "Ca",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "Cb",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "D",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "Da",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "Db",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "E",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "F",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "R1_1",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "R1_2",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "R1_3",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "R1_4",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "R2_2",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "R2_4",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "R2_6",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "R2_8",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "W1",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "W2",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "W3",
+                                "NewValue": "Immature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "W4",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "W5",
+                                "NewValue": "Mature"
+                            },
+                            {
+                                "VariableName": "IndividualMaturity",
+                                "Value": "W6",
+                                "NewValue": "Mature"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "processName": "TranslateStoxBiotic",
+                    "functionName": "RstoxData::TranslateStoxBiotic",
+                    "functionInputs": {
+                        "StoxBioticData": "AddToStoxBiotic",
+                        "Translation": "DefineTranslation"
+                    },
+                    "functionParameters": {
+                        "PreserveClass": true
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "FilterStoxBiotic",
+                    "functionName": "RstoxData::FilterStoxBiotic",
+                    "functionInputs": {
+                        "StoxBioticData": "TranslateStoxBiotic"
+                    },
+                    "functionParameters": {
+                        "FilterExpression": {
+                            "SpeciesCategory": "SpeciesCategory %notin% c(\"126505\", \"127141\")"
+                        },
+                        "FilterUpwards": false
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "DefineStratumPolygon",
+                    "functionName": "RstoxBase::DefineStratumPolygon",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "UseProcessData": true,
+                        "DefinitionMethod": "Manual",
+                        "FileName": [
+
+                        ],
+                        "StratumNameLabel": "polygonName",
+                        "SimplifyStratumPolygon": "FALSE",
+                        "SimplificationFactor": 1
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": true,
+                        "fileOutput": true
+                    },
+                    "processData": {
+                        "StratumPolygon": {
+                            "type": "FeatureCollection",
+                            "features": [
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "Statum1"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    19.050573358066,
+                                                    56.1048019704284
+                                                ],
+                                                [
+                                                    20.1870524203965,
+                                                    56.2333415826689
+                                                ],
+                                                [
+                                                    19.9910971773659,
+                                                    55.5253461591743
+                                                ],
+                                                [
+                                                    18.9561979583505,
+                                                    55.6086439227177
+                                                ],
+                                                [
+                                                    19.050573358066,
+                                                    56.1048019704284
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "properties": {
+                                        "StratumName": "Stratum2"
+                                    },
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [
+                                            [
+                                                [
+                                                    19.9866238214521,
+                                                    55.5156577336017
+                                                ],
+                                                [
+                                                    20.2066736643516,
+                                                    56.2102706411461
+                                                ],
+                                                [
+                                                    20.9376977661403,
+                                                    56.0173998638585
+                                                ],
+                                                [
+                                                    20.7561894196542,
+                                                    55.400451353168
+                                                ],
+                                                [
+                                                    19.9866238214521,
+                                                    55.5156577336017
+                                                ]
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "processName": "StratumArea",
+                    "functionName": "RstoxBase::StratumArea",
+                    "functionInputs": {
+                        "StratumPolygon": "DefineStratumPolygon"
+                    },
+                    "functionParameters": {
+                        "AreaMethod": "Accurate"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "DefineBioticPSU",
+                    "functionName": "RstoxBase::DefineBioticPSU",
+                    "functionInputs": {
+                        "StratumPolygon": "DefineStratumPolygon",
+                        "StoxBioticData": "FilterStoxBiotic"
+                    },
+                    "functionParameters": {
+                        "UseProcessData": true,
+                        "DefinitionMethod": "StationToPSU",
+                        "FileName": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": {
+                        "Stratum_PSU": [
+                            {
+                                "Stratum": "Statum1",
+                                "PSU": "PSU3"
+                            },
+                            {
+                                "Stratum": "Statum1",
+                                "PSU": "PSU4"
+                            },
+                            {
+                                "Stratum": "Stratum2",
+                                "PSU": "PSU1"
+                            },
+                            {
+                                "Stratum": "Stratum2",
+                                "PSU": "PSU2"
+                            },
+                            {
+                                "Stratum": "Stratum2",
+                                "PSU": "PSU5"
+                            }
+                        ],
+                        "Station_PSU": [
+                            {
+                                "Station": "BIAS2019-1",
+                                "PSU": "PSU1"
+                            },
+                            {
+                                "Station": "BIAS2019-2",
+                                "PSU": "PSU2"
+                            },
+                            {
+                                "Station": "BIAS2019-3",
+                                "PSU": "PSU3"
+                            },
+                            {
+                                "Station": "BIAS2019-4",
+                                "PSU": "PSU4"
+                            },
+                            {
+                                "Station": "BIAS2019-5",
+                                "PSU": "PSU5"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "processName": "LengthDistribution",
+                    "functionName": "RstoxBase::LengthDistribution",
+                    "functionInputs": {
+                        "StoxBioticData": "FilterStoxBiotic"
+                    },
+                    "functionParameters": {
+                        "LengthDistributionType": "Normalized",
+                        "RaisingFactorPriority": "Weight"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "RegroupLengthDistribution",
+                    "functionName": "RstoxBase::RegroupLengthDistribution",
+                    "functionInputs": {
+                        "LengthDistributionData": "LengthDistribution"
+                    },
+                    "functionParameters": {
+                        "LengthInterval": 1
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "MeanLengthDistribution",
+                    "functionName": "RstoxBase::MeanLengthDistribution",
+                    "functionInputs": {
+                        "LengthDistributionData": "RegroupLengthDistribution",
+                        "SumLengthDistributionData": null,
+                        "BioticLayer": null,
+                        "Survey": null,
+                        "StratumPolygon": "DefineStratumPolygon",
+                        "BioticPSU": "DefineBioticPSU"
+                    },
+                    "functionParameters": {
+                        "LayerDefinition": "FunctionParameter",
+                        "LayerDefinitionMethod": "WaterColumn",
+                        "Resolution": [
+
+                        ],
+                        "LayerTable": [
+
+                        ],
+                        "SurveyDefinition": "FunctionParameter",
+                        "SurveyDefinitionMethod": "AllStrata",
+                        "SurveyTable": [
+
+                        ],
+                        "PSUDefinition": "FunctionInput",
+                        "PSUDefinitionMethod": "StationToPSU"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "SweptAreaDensity",
+                    "functionName": "RstoxBase::SweptAreaDensity",
+                    "functionInputs": {
+                        "MeanLengthDistributionData": "MeanLengthDistribution"
+                    },
+                    "functionParameters": {
+                        "SweepWidthMethod": "Constant",
+                        "SweepWidth": 15
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "MeanDensity",
+                    "functionName": "RstoxBase::MeanDensity",
+                    "functionInputs": {
+                        "DensityData": "SweptAreaDensity"
+                    },
+                    "functionParameters": {
+
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "Abundance",
+                    "functionName": "RstoxBase::Abundance",
+                    "functionInputs": {
+                        "MeanDensityData": "MeanDensity",
+                        "StratumAreaData": "StratumArea"
+                    },
+                    "functionParameters": {
+
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "Individuals",
+                    "functionName": "RstoxBase::Individuals",
+                    "functionInputs": {
+                        "StoxBioticData": "FilterStoxBiotic",
+                        "BioticAssignment": null,
+                        "MeanLengthDistributionData": "MeanLengthDistribution"
+                    },
+                    "functionParameters": {
+                        "AbundanceType": "SweptArea"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "SuperIndividuals",
+                    "functionName": "RstoxBase::SuperIndividuals",
+                    "functionInputs": {
+                        "IndividualsData": "Individuals",
+                        "AbundanceData": "Abundance",
+                        "LengthDistributionData": null
+                    },
+                    "functionParameters": {
+                        "DistributionMethod": "Equal"
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "ImputeSuperIndividuals",
+                    "functionName": "RstoxBase::ImputeSuperIndividuals",
+                    "functionInputs": {
+                        "SuperIndividualsData": "SuperIndividuals"
+                    },
+                    "functionParameters": {
+                        "ImputationMethod": "RandomSampling",
+                        "ImputeAtMissing": "IndividualAge",
+                        "ImputeByEqual": [
+                            "SpeciesCategory",
+                            "IndividualTotalLength"
+                        ],
+                        "ToImpute": [
+                            "IndividualRoundWeight",
+                            "IndividualSex",
+                            "StockCode",
+                            "IndividualMaturity",
+                            "MaturityScale",
+                            "IndividualAge"
+                        ],
+                        "Seed": 1
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                }
+            ],
+            "analysis": [
+                {
+                    "processName": "Bootstrap",
+                    "functionName": "RstoxFramework::Bootstrap",
+                    "functionInputs": {
+
+                    },
+                    "functionParameters": {
+                        "BootstrapMethodTable": [
+                            {
+                                "ResampleFunction": "ResampleMeanLengthDistributionData",
+                                "ProcessName": "MeanLengthDistribution",
+                                "Seed": 1
+                            }
+                        ],
+                        "NumberOfBootstraps": 5,
+                        "OutputProcesses": "ImputeSuperIndividuals",
+                        "UseOutputData": false,
+                        "NumberOfCores": 1,
+                        "BaselineSeedTable": [
+                            {
+                                "ProcessName": "ImputeSuperIndividuals",
+                                "Seed": 1
+                            }
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                }
+            ],
+            "report": [
+                {
+                    "processName": "ReportBootstrap",
+                    "functionName": "RstoxFramework::ReportBootstrap",
+                    "functionInputs": {
+                        "BootstrapData": "Bootstrap"
+                    },
+                    "functionParameters": {
+                        "BaselineProcess": "ImputeSuperIndividuals",
+                        "TargetVariable": "Biomass",
+                        "AggregationFunction": "sum",
+                        "BootstrapReportFunction": "summaryStox",
+                        "GroupingVariables": "SpeciesCategory",
+                        "RemoveMissingValues": true,
+                        "AggregationWeightingVariable": [
+
+                        ],
+                        "BootstrapReportWeightingVariable": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "ReportBootstrapByStratum",
+                    "functionName": "RstoxFramework::ReportBootstrap",
+                    "functionInputs": {
+                        "BootstrapData": "Bootstrap"
+                    },
+                    "functionParameters": {
+                        "BaselineProcess": "ImputeSuperIndividuals",
+                        "TargetVariable": "Biomass",
+                        "AggregationFunction": "sum",
+                        "BootstrapReportFunction": "summaryStox",
+                        "GroupingVariables": [
+                            "Stratum",
+                            "IndividualMaturity",
+                            "SpeciesCategory"
+                        ],
+                        "RemoveMissingValues": true,
+                        "AggregationWeightingVariable": [
+
+                        ],
+                        "BootstrapReportWeightingVariable": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                },
+                {
+                    "processName": "ReportSuperIndividualsByLength",
+                    "functionName": "RstoxBase::ReportSuperIndividuals",
+                    "functionInputs": {
+                        "SuperIndividualsData": "ImputeSuperIndividuals"
+                    },
+                    "functionParameters": {
+                        "TargetVariable": "Abundance",
+                        "ReportFunction": "sum",
+                        "GroupingVariables": [
+                            "SpeciesCategory",
+                            "Stratum",
+                            "IndividualTotalLength"
+                        ],
+                        "RemoveMissingValues": true,
+                        "WeightingVariable": [
+
+                        ]
+                    },
+                    "processParameters": {
+                        "enabled": true,
+                        "showInMap": false,
+                        "fileOutput": true
+                    },
+                    "processData": [
+
+                    ]
+                }
+            ]
+        }
+    }
+}
+
