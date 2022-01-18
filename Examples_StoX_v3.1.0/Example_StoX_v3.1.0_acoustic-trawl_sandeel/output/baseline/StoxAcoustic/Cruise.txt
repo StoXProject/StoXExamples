@@ -1,2 +1,0 @@
-CruiseKey	Cruise	Platform
-2020821	2020821	3317

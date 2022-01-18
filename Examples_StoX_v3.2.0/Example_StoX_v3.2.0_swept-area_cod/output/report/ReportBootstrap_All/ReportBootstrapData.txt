@@ -1,2 +1,0 @@
-"Biomass_sum_5%"	"Biomass_sum_50%"	"Biomass_sum_95%"	"Biomass_sum_mean"	"Biomass_sum_sd"	"Biomass_sum_cv"
-49548873601.2069	83369167685.7261	114124141697.819	81415247531.4844	20154238064.9262	0.247548692364

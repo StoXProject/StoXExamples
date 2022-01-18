@@ -1,2 +1,0 @@
-"AcousticCategory"	"Frequency"	"TargetStrength0"	"LengthExponent"
-"27"	38000	-93	20

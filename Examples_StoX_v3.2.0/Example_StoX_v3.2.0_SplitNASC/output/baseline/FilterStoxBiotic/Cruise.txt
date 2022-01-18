@@ -1,2 +1,0 @@
-"CruiseKey"	"Cruise"	"Platform"
-"BIAS_2018_SWE"	"BIAS_2018_SWE"	"26D4"

@@ -1,3 +1,0 @@
-"Stratum"	"Area"
-"Engelsk_Klondyke_2020"	276.723387482063
-"Outer_Shoal_2020_1"	731.715360101006

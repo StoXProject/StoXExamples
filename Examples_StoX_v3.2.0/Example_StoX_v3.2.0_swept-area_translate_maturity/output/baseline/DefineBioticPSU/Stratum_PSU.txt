@@ -1,6 +1,0 @@
-"Stratum"	"PSU"
-"Statum1"	"PSU3"
-"Statum1"	"PSU4"
-"Stratum2"	"PSU1"
-"Stratum2"	"PSU2"
-"Stratum2"	"PSU5"
